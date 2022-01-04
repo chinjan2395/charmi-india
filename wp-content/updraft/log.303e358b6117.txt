@@ -1,0 +1,492 @@
+0000.000 (0) Opened log file at time: Thu, 23 Dec 2021 17:17:46 +0000 on http://charmiindia.in
+0000.012 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.66 WP: 5.8.2 PHP: 7.3.12 (apache2handler, Windows NT LAPTOP-JCVH2PH2 10.0 build 22000 (Windows 10) AMD64) MySQL: 10.4.10-MariaDB (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.41 (Win64) PHP/7.3.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 16.4M | 6M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.014 (0) Free space on disk containing Updraft's temporary directory: 110111.1 MB
+0000.017 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.020 (0) Semaphore (fd, wp_options) being initialised
+0000.023 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.026 (0) Set semaphore last lock (fd) time to 2021-12-23 17:17:46
+0000.027 (0) Semaphore lock (fd) complete
+0000.032 (0) Backup run: resumption=0, nonce=303e358b6117, file_nonce=303e358b6117 begun at=1640279866 (0s ago), job type=backup
+0000.033 (0) Scheduling a resumption (1) after 300 seconds (1640280166) in case this run gets aborted
+0000.064 (0) Checking if we have a zip executable available
+0000.066 (0) Creation of backups of directories: beginning
+0000.072 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0005.336 (0) Total entities for the zip file: 1627 directories, 8578 files (0 skipped as non-modified), 115.6 MB
+0005.356 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0007.269 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 100 files added (on-disk size: 319.7 KB)
+0008.331 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.6 MB, 138 (139) files added so far); re-opening (prior size: 319.7 KB)
+0010.106 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 200 files added (on-disk size: 1206.7 KB)
+0011.189 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 300 files added (on-disk size: 1206.7 KB)
+0011.320 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.8 MB, 178 (317) files added so far); re-opening (prior size: 1206.7 KB)
+0012.948 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 400 files added (on-disk size: 2874.4 KB)
+0014.264 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 500 files added (on-disk size: 2874.4 KB)
+0014.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 187 (504) files added so far); re-opening (prior size: 2874.4 KB)
+0016.051 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 600 files added (on-disk size: 3778.9 KB)
+0017.321 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.2 MB, 192 (696) files added so far); re-opening (prior size: 3778.9 KB)
+0017.529 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 700 files added (on-disk size: 3895.4 KB)
+0018.771 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 800 files added (on-disk size: 3895.4 KB)
+0020.024 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 900 files added (on-disk size: 3895.4 KB)
+0020.314 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.8 MB, 240 (936) files added so far); re-opening (prior size: 3895.4 KB)
+0021.711 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1000 files added (on-disk size: 4459.3 KB)
+0022.360 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1100 files added (on-disk size: 4459.3 KB)
+0023.337 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (8.2 MB, 214 (1150) files added so far); re-opening (prior size: 4459.3 KB)
+0025.624 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1200 files added (on-disk size: 6178.5 KB)
+0026.328 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (10.6 MB, 109 (1259) files added so far); re-opening (prior size: 6178.5 KB)
+0028.751 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1300 files added (on-disk size: 9347.7 KB)
+0030.086 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1400 files added (on-disk size: 9347.7 KB)
+0030.311 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.1 MB, 156 (1415) files added so far); re-opening (prior size: 9347.7 KB)
+0032.402 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1500 files added (on-disk size: 10657.7 KB)
+0033.317 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 143 (1558) files added so far); re-opening (prior size: 10657.7 KB)
+0034.497 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1600 files added (on-disk size: 10887.3 KB)
+0036.322 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.8 MB, 97 (1655) files added so far); re-opening (prior size: 10887.3 KB)
+0037.878 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1700 files added (on-disk size: 11114.8 KB)
+0039.310 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.6 MB, 129 (1784) files added so far); re-opening (prior size: 11114.8 KB)
+0039.710 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1800 files added (on-disk size: 11793 KB)
+0041.888 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 1900 files added (on-disk size: 11793 KB)
+0042.323 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.8 MB, 139 (1923) files added so far); re-opening (prior size: 11793 KB)
+0044.312 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2000 files added (on-disk size: 12859.5 KB)
+0045.354 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.8 MB, 122 (2045) files added so far); re-opening (prior size: 12859.5 KB)
+0047.416 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2100 files added (on-disk size: 14265.4 KB)
+0048.315 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.7 MB, 92 (2137) files added so far); re-opening (prior size: 14265.4 KB)
+0050.800 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2200 files added (on-disk size: 15703.9 KB)
+0051.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.1 MB, 118 (2255) files added so far); re-opening (prior size: 15703.9 KB)
+0052.599 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2300 files added (on-disk size: 16023.9 KB)
+0054.064 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2400 files added (on-disk size: 16023.9 KB)
+0054.319 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.5 MB, 165 (2420) files added so far); re-opening (prior size: 16023.9 KB)
+0055.344 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2500 files added (on-disk size: 16458.1 KB)
+0055.391 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2600 files added (on-disk size: 16458.1 KB)
+0055.440 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2700 files added (on-disk size: 16458.1 KB)
+0055.488 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2800 files added (on-disk size: 16458.1 KB)
+0055.528 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 2900 files added (on-disk size: 16458.1 KB)
+0055.550 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3000 files added (on-disk size: 16458.1 KB)
+0055.574 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3100 files added (on-disk size: 16458.1 KB)
+0055.597 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3200 files added (on-disk size: 16458.1 KB)
+0055.619 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3300 files added (on-disk size: 16458.1 KB)
+0055.643 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3400 files added (on-disk size: 16458.1 KB)
+0055.648 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (21.6 MB, 8578 files batched, 1001 (3421) added so far); re-opening (prior size: 16458.1 KB)
+0059.198 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3500 files added (on-disk size: 22776.9 KB)
+0059.218 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3600 files added (on-disk size: 22776.9 KB)
+0059.240 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3700 files added (on-disk size: 22776.9 KB)
+0059.266 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3800 files added (on-disk size: 22776.9 KB)
+0060.237 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 3900 files added (on-disk size: 22776.9 KB)
+0061.113 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4000 files added (on-disk size: 22776.9 KB)
+0061.308 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.2 MB, 606 (4027) files added so far); re-opening (prior size: 22776.9 KB)
+0062.938 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4100 files added (on-disk size: 24474.8 KB)
+0064.064 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4200 files added (on-disk size: 24474.8 KB)
+0065.355 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.1 MB, 222 (4249) files added so far); re-opening (prior size: 24474.8 KB)
+0068.511 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.4 MB, 26 (4275) files added so far); re-opening (prior size: 26437.4 KB)
+0069.734 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4300 files added (on-disk size: 26546.6 KB)
+0071.340 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.4 MB, 60 (4335) files added so far); re-opening (prior size: 26546.6 KB)
+0074.825 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 57 (4392) files added so far); re-opening (prior size: 26670.4 KB)
+0075.501 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4400 files added (on-disk size: 26797.8 KB)
+0077.307 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.2 MB, 103 (4495) files added so far); re-opening (prior size: 26797.8 KB)
+0077.802 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4500 files added (on-disk size: 27100.5 KB)
+0079.644 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4600 files added (on-disk size: 27100.5 KB)
+0080.310 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.7 MB, 143 (4638) files added so far); re-opening (prior size: 27100.5 KB)
+0081.861 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4700 files added (on-disk size: 27541.5 KB)
+0083.320 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 156 (4794) files added so far); re-opening (prior size: 27541.5 KB)
+0083.909 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4800 files added (on-disk size: 27892 KB)
+0085.501 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 4900 files added (on-disk size: 27892 KB)
+0086.323 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 171 (4965) files added so far); re-opening (prior size: 27892 KB)
+0087.053 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5000 files added (on-disk size: 28323.9 KB)
+0088.275 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5100 files added (on-disk size: 28323.9 KB)
+0089.314 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.2 MB, 218 (5183) files added so far); re-opening (prior size: 28323.9 KB)
+0090.427 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5200 files added (on-disk size: 29345.6 KB)
+0091.925 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5300 files added (on-disk size: 29345.6 KB)
+0092.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1 MB, 151 (5334) files added so far); re-opening (prior size: 29345.6 KB)
+0093.421 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5400 files added (on-disk size: 29639 KB)
+0094.687 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5500 files added (on-disk size: 29639 KB)
+0095.312 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 212 (5546) files added so far); re-opening (prior size: 29639 KB)
+0096.502 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5600 files added (on-disk size: 29850.9 KB)
+0097.290 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5700 files added (on-disk size: 29850.9 KB)
+0098.160 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5800 files added (on-disk size: 29850.9 KB)
+0098.308 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.4 MB, 269 (5815) files added so far); re-opening (prior size: 29850.9 KB)
+0099.688 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 5900 files added (on-disk size: 30074.4 KB)
+0100.584 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6000 files added (on-disk size: 30074.4 KB)
+0101.312 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.6 MB, 273 (6088) files added so far); re-opening (prior size: 30074.4 KB)
+0101.928 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6100 files added (on-disk size: 30340.4 KB)
+0102.791 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6200 files added (on-disk size: 30340.4 KB)
+0103.689 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6300 files added (on-disk size: 30340.4 KB)
+0104.314 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 284 (6372) files added so far); re-opening (prior size: 30340.4 KB)
+0105.076 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6400 files added (on-disk size: 30588.6 KB)
+0106.161 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6500 files added (on-disk size: 30588.6 KB)
+0107.046 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6600 files added (on-disk size: 30588.6 KB)
+0107.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.7 MB, 248 (6620) files added so far); re-opening (prior size: 30588.6 KB)
+0109.499 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6700 files added (on-disk size: 30899 KB)
+0110.318 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.9 MB, 133 (6753) files added so far); re-opening (prior size: 30899 KB)
+0111.842 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6800 files added (on-disk size: 31744.6 KB)
+0113.003 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 6900 files added (on-disk size: 31744.6 KB)
+0113.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.4 MB, 171 (6924) files added so far); re-opening (prior size: 31744.6 KB)
+0115.270 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7000 files added (on-disk size: 32589.3 KB)
+0116.309 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 176 (7100) files added so far); re-opening (prior size: 32589.3 KB)
+0116.779 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7100 files added (on-disk size: 32785.8 KB)
+0119.080 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7200 files added (on-disk size: 32785.8 KB)
+0119.327 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.5 MB, 109 (7209) files added so far); re-opening (prior size: 32785.8 KB)
+0122.207 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7300 files added (on-disk size: 32921.9 KB)
+0122.317 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.2 MB, 98 (7307) files added so far); re-opening (prior size: 32921.9 KB)
+0123.442 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7400 files added (on-disk size: 33019.6 KB)
+0124.345 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7500 files added (on-disk size: 33019.6 KB)
+0125.311 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.1 MB, 263 (7570) files added so far); re-opening (prior size: 33019.6 KB)
+0126.157 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7600 files added (on-disk size: 33310.7 KB)
+0127.185 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7700 files added (on-disk size: 33310.7 KB)
+0128.313 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.9 MB, 219 (7789) files added so far); re-opening (prior size: 33310.7 KB)
+0129.204 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7800 files added (on-disk size: 35159.6 KB)
+0131.328 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.4 MB, 97 (7886) files added so far); re-opening (prior size: 35159.6 KB)
+0132.449 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 7900 files added (on-disk size: 35319 KB)
+0133.523 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8000 files added (on-disk size: 35319 KB)
+0134.319 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.2 MB, 207 (8093) files added so far); re-opening (prior size: 35319 KB)
+0135.208 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8100 files added (on-disk size: 36563.5 KB)
+0136.066 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8200 files added (on-disk size: 36563.5 KB)
+0137.311 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4 MB, 203 (8296) files added so far); re-opening (prior size: 36563.5 KB)
+0138.404 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8300 files added (on-disk size: 39060.1 KB)
+0139.004 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8400 files added (on-disk size: 39060.1 KB)
+0139.717 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.tmp: 8500 files added (on-disk size: 39060.1 KB)
+0140.310 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.7 MB, 264 (8560) files added so far); re-opening (prior size: 39060.1 KB)
+0142.967 (0) Creating zip file manifest (D:\wamp64\www\charmiindia/wp-content/updraft/backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.list-temp.tmp)
+0143.056 (0) Successfully created zip file manifest (size: 786033)
+0143.852 (0) Created plugins zip (0) - 39909.6 KB in 143.8 s (277.6 KB/s) (sha1: 032643cb5db9646859e65a349525074d9799336e, sha256: 90108d2984a0b54879711608b352e4df4c9af9c6ccabd059afaf7fa2237440e6)
+0143.859 (0) Beginning creation of dump of themes (split every: 400 MB)
+0144.405 (0) Total entities for the zip file: 237 directories, 896 files (0 skipped as non-modified), 21.4 MB
+0145.627 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0146.598 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.5 MB, 129 (129) files added so far); re-opening (prior size: 0 KB)
+0148.105 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 200 files added (on-disk size: 858.7 KB)
+0149.116 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 300 files added (on-disk size: 858.7 KB)
+0149.410 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.5 MB, 175 (304) files added so far); re-opening (prior size: 858.7 KB)
+0152.326 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 400 files added (on-disk size: 4360.2 KB)
+0153.319 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (3.9 MB, 133 (437) files added so far); re-opening (prior size: 4360.2 KB)
+0154.620 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 500 files added (on-disk size: 6488.2 KB)
+0156.214 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 600 files added (on-disk size: 6488.2 KB)
+0156.307 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (5.2 MB, 176 (613) files added so far); re-opening (prior size: 6488.2 KB)
+0157.398 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 700 files added (on-disk size: 10042 KB)
+0158.756 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.tmp: 800 files added (on-disk size: 10042 KB)
+0159.322 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.7 MB, 249 (862) files added so far); re-opening (prior size: 10042 KB)
+0160.618 (0) Creating zip file manifest (D:\wamp64\www\charmiindia/wp-content/updraft/backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.list-temp.tmp)
+0160.624 (0) Successfully created zip file manifest (size: 58829)
+0160.795 (0) Created themes zip (0) - 11336.2 KB in 16.9 s (669.5 KB/s) (sha1: 1fa1970bbc981f390ab98372c0ed74974a10558c, sha256: 6e4890895d6e5e0c9b0d5b09b3b6c0b648eb202ae42f3578f746024a9f6025fd)
+0160.799 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0160.801 (0) Looking for candidates to backup in: D:\wamp64\www\charmiindia/wp-content/uploads
+0160.802 (0) finding files: 2021: adding to list (1)
+0160.803 (0) finding files: elementor: adding to list (2)
+0160.805 (0) finding files: wc-logs: adding to list (3)
+0160.806 (0) finding files: woocommerce-placeholder-100x100.png: adding to list (4)
+0160.807 (0) finding files: woocommerce-placeholder-1024x1024.png: adding to list (5)
+0160.808 (0) finding files: woocommerce-placeholder-1200x1200.png: adding to list (6)
+0160.810 (0) finding files: woocommerce-placeholder-1200x800.png: adding to list (7)
+0160.811 (0) finding files: woocommerce-placeholder-150x150.png: adding to list (8)
+0160.812 (0) finding files: woocommerce-placeholder-240x145.png: adding to list (9)
+0160.813 (0) finding files: woocommerce-placeholder-300x300.png: adding to list (10)
+0160.814 (0) finding files: woocommerce-placeholder-320x320.png: adding to list (11)
+0160.816 (0) finding files: woocommerce-placeholder-600x400.png: adding to list (12)
+0160.817 (0) finding files: woocommerce-placeholder-600x600.png: adding to list (13)
+0160.818 (0) finding files: woocommerce-placeholder-600x900.png: adding to list (14)
+0160.819 (0) finding files: woocommerce-placeholder-768x768.png: adding to list (15)
+0160.820 (0) finding files: woocommerce-placeholder.png: adding to list (16)
+0160.822 (0) finding files: woocommerce_uploads: adding to list (17)
+0160.823 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0160.903 (0) Total entities for the zip file: 6 directories, 132 files (0 skipped as non-modified), 5.1 MB
+0161.492 (0) Zip: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0161.710 (0) Creating zip file manifest (D:\wamp64\www\charmiindia/wp-content/updraft/backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-uploads.zip.list-temp.tmp)
+0161.713 (0) Successfully created zip file manifest (size: 8895)
+0161.771 (0) Created uploads zip (0) - 5218.8 KB in 0.9 s (5525.3 KB/s) (sha1: 2942a0df321182a04834418e1f65a9800aa2eeda, sha256: 9d0d7e2111d52e0c4c91489bfa5693aca08791498375ba1be7dd3b478bf36397)
+0161.776 (0) Beginning backup of other directories found in the content directory (index: 0)
+0161.778 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0161.779 (0) Looking for candidates to backup in: D:\wamp64\www\charmiindia/wp-content
+0161.781 (0) finding files: fonts: adding to list (1)
+0161.782 (0) finding files: index.php: adding to list (2)
+0161.783 (0) finding files: plugins: skipping: this is the plugins directory
+0161.784 (0) finding files: themes: skipping: this is the themes directory
+0161.785 (0) finding files: updraft: skipping: this is the updraft directory
+0161.785 (0) finding files: upgrade: skipping: excluded by options
+0161.786 (0) finding files: uploads: skipping: this is the uploads directory
+0161.793 (0) Total entities for the zip file: 3 directories, 10 files (0 skipped as non-modified), 0.1 MB
+0161.881 (0) Creating zip file manifest (D:\wamp64\www\charmiindia/wp-content/updraft/backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-others.zip.list-temp.tmp)
+0161.883 (0) Successfully created zip file manifest (size: 677)
+0161.888 (0) Created others zip (0) - 124.3 KB in 0.1 s (1250.1 KB/s) (sha1: 4b996da47877565729c8ef02d979bc34ce661a69, sha256: 8165337407dcc96c5567a8678026218b731229f057cde77768bfae0f1681dc7f)
+0161.894 (0) Saving backup status to database (elements: 8)
+0161.896 (0) Beginning creation of database dump (WordPress DB)
+0161.897 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0162.109 (0) Table wp_options: Total expected rows (via COUNT): 580
+0162.295 (0) Table wp_options: Rows added in this batch (next record: 2324): 576 (uncompressed bytes in this segment=2255941) in 0.20 seconds
+0162.307 (0) Table wp_options: finishing file(s) (2, 417.2 KB)
+0162.325 (0) Table wp_users: Total expected rows (via COUNT): 3
+0162.327 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.329 (0) Table wp_users: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1678) in 0.02 seconds
+0162.334 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0162.343 (0) Table wp_usermeta: Total expected rows (via COUNT): 180
+0162.344 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.352 (0) Table wp_usermeta: Rows added in this batch (next record: 189): 180 (uncompressed bytes in this segment=14909) in 0.01 seconds
+0162.360 (0) Table wp_usermeta: finishing file(s) (2, 4.1 KB)
+0162.372 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 258
+0162.373 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.399 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 281): 258 (uncompressed bytes in this segment=70153) in 0.03 seconds
+0162.405 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 2.9 KB)
+0162.413 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0162.416 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=621) in 0.01 seconds
+0162.422 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0162.431 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 2
+0162.432 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.434 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=704) in 0.01 seconds
+0162.439 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0162.447 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 774
+0162.502 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 774): 774 (uncompressed bytes in this segment=67994) in 0.06 seconds
+0162.511 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 6.1 KB)
+0162.522 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0162.524 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=684) in 0.01 seconds
+0162.530 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0162.538 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0162.540 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.542 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2140) in 0.01 seconds
+0162.547 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0162.561 (0) Table wp_links: Total expected rows (via COUNT): 0
+0162.564 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1266) in 0.01 seconds
+0162.570 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0162.580 (0) Table wp_postmeta: Total expected rows (approximate): 1240
+0162.651 (0) Table wp_postmeta: Rows added in this batch (next record: 4447): 1240 (uncompressed bytes in this segment=199803) in 0.08 seconds
+0162.661 (0) Table wp_postmeta: finishing file(s) (2, 15.2 KB)
+0162.673 (0) Table wp_posts: Total expected rows (via COUNT): 159
+0162.673 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.704 (0) Table wp_posts: Rows added in this batch (next record: 355): 159 (uncompressed bytes in this segment=212871) in 0.04 seconds
+0162.712 (0) Table wp_posts: finishing file(s) (2, 18.7 KB)
+0162.721 (0) Table wp_term_relationships: Total expected rows (approximate): 138
+0162.725 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 138 (uncompressed bytes in this segment=2669) in 0.01 seconds
+0162.730 (0) Table wp_term_relationships: finishing file(s) (2, 0.7 KB)
+0162.739 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 38
+0162.740 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.745 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 38): 38 (uncompressed bytes in this segment=2264) in 0.01 seconds
+0162.750 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.8 KB)
+0162.760 (0) Table wp_termmeta: Total expected rows (via COUNT): 40
+0162.761 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.765 (0) Table wp_termmeta: Rows added in this batch (next record: 40): 40 (uncompressed bytes in this segment=2095) in 0.01 seconds
+0162.771 (0) Table wp_termmeta: finishing file(s) (2, 0.8 KB)
+0162.779 (0) Table wp_terms: Total expected rows (via COUNT): 38
+0162.780 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.783 (0) Table wp_terms: Rows added in this batch (next record: 38): 38 (uncompressed bytes in this segment=1907) in 0.01 seconds
+0162.788 (0) Table wp_terms: finishing file(s) (2, 0.8 KB)
+0162.807 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 7
+0162.809 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 7 (uncompressed bytes in this segment=651) in 0.01 seconds
+0162.816 (0) Table wp_wc_category_lookup: finishing file(s) (2, 0.4 KB)
+0162.826 (0) Table wp_wc_product_meta_lookup: Total expected rows (via COUNT): 56
+0162.827 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.834 (0) Table wp_wc_product_meta_lookup: Rows added in this batch (next record: 355): 56 (uncompressed bytes in this segment=6264) in 0.01 seconds
+0162.839 (0) Table wp_wc_product_meta_lookup: finishing file(s) (2, 0.8 KB)
+0162.853 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0162.855 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=659) in 0.01 seconds
+0162.862 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0162.871 (0) Table wp_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0162.872 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.874 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=800) in 0.01 seconds
+0162.880 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0162.889 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (via COUNT): 0
+0162.891 (0) Table wp_woocommerce_order_itemmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=772) in 0.01 seconds
+0162.896 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (2, 0.4 KB)
+0162.913 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0162.915 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=799) in 0.01 seconds
+0162.922 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0162.942 (0) Table wp_admin_columns: Total expected rows (via COUNT): 1
+0162.943 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.945 (0) Table wp_admin_columns: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2486) in 0.01 seconds
+0162.950 (0) Table wp_admin_columns: finishing file(s) (2, 0.8 KB)
+0162.960 (0) Table wp_wc_admin_note_actions: Total expected rows (via COUNT): 48
+0162.961 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0162.968 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 1104): 48 (uncompressed bytes in this segment=8231) in 0.01 seconds
+0162.974 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 1.9 KB)
+0162.991 (0) Table wp_wc_admin_notes: Total expected rows (via COUNT): 43
+0162.993 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0163.007 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 43): 43 (uncompressed bytes in this segment=22241) in 0.03 seconds
+0163.021 (0) Table wp_wc_admin_notes: finishing file(s) (2, 5.6 KB)
+0163.031 (0) Table wp_wc_customer_lookup: Total expected rows (via COUNT): 1
+0163.032 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0163.034 (0) Table wp_wc_customer_lookup: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1397) in 0.01 seconds
+0163.039 (0) Table wp_wc_customer_lookup: finishing file(s) (2, 0.6 KB)
+0163.054 (0) Table wp_wc_download_log: Total expected rows (via COUNT): 0
+0163.057 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=739) in 0.01 seconds
+0163.062 (0) Table wp_wc_download_log: finishing file(s) (2, 0.4 KB)
+0163.073 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0163.075 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=711) in 0.01 seconds
+0163.080 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 0.4 KB)
+0163.088 (0) Table wp_wc_order_product_lookup: Total expected rows (via COUNT): 0
+0163.089 (0) Table wp_wc_order_product_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1211) in 0.01 seconds
+0163.095 (0) Table wp_wc_order_product_lookup: finishing file(s) (2, 0.5 KB)
+0163.103 (0) Table wp_wc_order_stats: Total expected rows (via COUNT): 0
+0163.104 (0) Table wp_wc_order_stats: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1102) in 0.01 seconds
+0163.110 (0) Table wp_wc_order_stats: finishing file(s) (2, 0.5 KB)
+0163.120 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 0
+0163.122 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=789) in 0.01 seconds
+0163.128 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0163.143 (0) Table wp_wc_webhooks: Total expected rows (via COUNT): 0
+0163.147 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1202) in 0.01 seconds
+0163.152 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0163.171 (0) Table wp_woocommerce_api_keys: Total expected rows (via COUNT): 0
+0163.172 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1031) in 0.01 seconds
+0163.179 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.4 KB)
+0163.204 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 27
+0163.205 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0163.209 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: 27): 27 (uncompressed bytes in this segment=2594) in 0.01 seconds
+0163.217 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.8 KB)
+0163.227 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0163.229 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1514) in 0.01 seconds
+0163.234 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0163.251 (0) Table wp_woocommerce_log: Total expected rows (via COUNT): 0
+0163.253 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=719) in 0.01 seconds
+0163.260 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0163.272 (0) Table wp_woocommerce_order_items: Total expected rows (via COUNT): 0
+0163.274 (0) Table wp_woocommerce_order_items: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=727) in 0.01 seconds
+0163.280 (0) Table wp_woocommerce_order_items: finishing file(s) (2, 0.4 KB)
+0163.297 (0) Table wp_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0163.298 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=821) in 0.01 seconds
+0163.304 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0163.323 (0) Table wp_woocommerce_sessions: Total expected rows (via COUNT): 2
+0163.324 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0163.327 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 7): 2 (uncompressed bytes in this segment=3590) in 0.02 seconds
+0163.333 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 0.9 KB)
+0163.348 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 0
+0163.351 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=862) in 0.01 seconds
+0163.356 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0163.373 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 0
+0163.374 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=765) in 0.01 seconds
+0163.379 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0163.387 (0) Table wp_woocommerce_shipping_zones: Total expected rows (via COUNT): 0
+0163.388 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=625) in 0.01 seconds
+0163.393 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0163.406 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0163.408 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=836) in 0.01 seconds
+0163.414 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0163.423 (0) Table wp_woocommerce_tax_rates: Total expected rows (via COUNT): 0
+0163.424 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1273) in 0.01 seconds
+0163.430 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 0.5 KB)
+0163.444 (0) Table wp_yith_wcwl: Total expected rows (via COUNT): 0
+0163.446 (0) Table wp_yith_wcwl: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=763) in 0.01 seconds
+0163.450 (0) Table wp_yith_wcwl: finishing file(s) (2, 0.4 KB)
+0163.467 (0) Table wp_yith_wcwl_lists: Total expected rows (via COUNT): 0
+0163.470 (0) Table wp_yith_wcwl_lists: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=894) in 0.01 seconds
+0163.475 (0) Table wp_yith_wcwl_lists: finishing file(s) (2, 0.4 KB)
+0163.478 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_options.table.tmpr2325.gz (1/46/fopen): adding to final database dump
+0163.491 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_options.table.gz (2/46/fopen): adding to final database dump
+0163.492 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_users.table.tmpr4.gz (3/46/fopen): adding to final database dump
+0163.494 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_users.table.gz (4/46/fopen): adding to final database dump
+0163.496 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_usermeta.table.tmpr190.gz (5/46/fopen): adding to final database dump
+0163.498 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_usermeta.table.gz (6/46/fopen): adding to final database dump
+0163.500 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_actions.table.tmpr282.gz (7/46/fopen): adding to final database dump
+0163.502 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_actions.table.gz (8/46/fopen): adding to final database dump
+0163.504 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/46/fopen): adding to final database dump
+0163.506 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_claims.table.gz (10/46/fopen): adding to final database dump
+0163.508 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/46/fopen): adding to final database dump
+0163.511 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_groups.table.gz (12/46/fopen): adding to final database dump
+0163.514 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_logs.table.tmpr775.gz (13/46/fopen): adding to final database dump
+0163.517 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_actionscheduler_logs.table.gz (14/46/fopen): adding to final database dump
+0163.519 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_commentmeta.table.tmpr0.gz (15/46/fopen): adding to final database dump
+0163.522 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_commentmeta.table.gz (16/46/fopen): adding to final database dump
+0163.524 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_comments.table.tmpr2.gz (17/46/fopen): adding to final database dump
+0163.526 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_comments.table.gz (18/46/fopen): adding to final database dump
+0163.528 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_links.table.tmpr0.gz (19/46/fopen): adding to final database dump
+0163.530 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_links.table.gz (20/46/fopen): adding to final database dump
+0163.532 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_postmeta.table.tmpr4448.gz (21/46/fopen): adding to final database dump
+0163.534 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_postmeta.table.gz (22/46/fopen): adding to final database dump
+0163.536 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_posts.table.tmpr356.gz (23/46/fopen): adding to final database dump
+0163.540 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_posts.table.gz (24/46/fopen): adding to final database dump
+0163.542 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_term_relationships.table.tmpr100001.gz (25/46/fopen): adding to final database dump
+0163.544 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_term_relationships.table.gz (26/46/fopen): adding to final database dump
+0163.546 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_term_taxonomy.table.tmpr39.gz (27/46/fopen): adding to final database dump
+0163.548 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_term_taxonomy.table.gz (28/46/fopen): adding to final database dump
+0163.550 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_termmeta.table.tmpr41.gz (29/46/fopen): adding to final database dump
+0163.552 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_termmeta.table.gz (30/46/fopen): adding to final database dump
+0163.554 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_terms.table.tmpr39.gz (31/46/fopen): adding to final database dump
+0163.556 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_terms.table.gz (32/46/fopen): adding to final database dump
+0163.558 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_category_lookup.table.tmpr1001.gz (33/46/fopen): adding to final database dump
+0163.560 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_category_lookup.table.gz (34/46/fopen): adding to final database dump
+0163.562 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_product_meta_lookup.table.tmpr356.gz (35/46/fopen): adding to final database dump
+0163.565 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_product_meta_lookup.table.gz (36/46/fopen): adding to final database dump
+0163.567 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_reserved_stock.table.tmpr1.gz (37/46/fopen): adding to final database dump
+0163.569 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_reserved_stock.table.gz (38/46/fopen): adding to final database dump
+0163.572 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_tax_rate_classes.table.tmpr3.gz (39/46/fopen): adding to final database dump
+0163.575 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_tax_rate_classes.table.gz (40/46/fopen): adding to final database dump
+0163.577 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_order_itemmeta.table.tmpr0.gz (41/46/fopen): adding to final database dump
+0163.579 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_order_itemmeta.table.gz (42/46/fopen): adding to final database dump
+0163.581 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (43/46/fopen): adding to final database dump
+0163.583 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_payment_tokenmeta.table.gz (44/46/fopen): adding to final database dump
+0163.585 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_admin_columns.table.tmpr2.gz (45/46/fopen): adding to final database dump
+0163.587 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_admin_columns.table.gz (46/46/fopen): adding to final database dump
+0163.589 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_admin_note_actions.table.tmpr1105.gz (47/46/fopen): adding to final database dump
+0163.591 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_admin_note_actions.table.gz (48/46/fopen): adding to final database dump
+0163.592 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_admin_notes.table.tmpr44.gz (49/46/fopen): adding to final database dump
+0163.594 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_admin_notes.table.gz (50/46/fopen): adding to final database dump
+0163.595 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_customer_lookup.table.tmpr2.gz (51/46/fopen): adding to final database dump
+0163.597 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_customer_lookup.table.gz (52/46/fopen): adding to final database dump
+0163.598 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_download_log.table.tmpr0.gz (53/46/fopen): adding to final database dump
+0163.599 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_download_log.table.gz (54/46/fopen): adding to final database dump
+0163.601 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_coupon_lookup.table.tmpr1.gz (55/46/fopen): adding to final database dump
+0163.602 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_coupon_lookup.table.gz (56/46/fopen): adding to final database dump
+0163.603 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_product_lookup.table.tmpr0.gz (57/46/fopen): adding to final database dump
+0163.604 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_product_lookup.table.gz (58/46/fopen): adding to final database dump
+0163.605 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_stats.table.tmpr0.gz (59/46/fopen): adding to final database dump
+0163.607 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_stats.table.gz (60/46/fopen): adding to final database dump
+0163.608 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_tax_lookup.table.tmpr1.gz (61/46/fopen): adding to final database dump
+0163.610 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_order_tax_lookup.table.gz (62/46/fopen): adding to final database dump
+0163.612 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_webhooks.table.tmpr0.gz (63/46/fopen): adding to final database dump
+0163.613 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_wc_webhooks.table.gz (64/46/fopen): adding to final database dump
+0163.614 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_api_keys.table.tmpr0.gz (65/46/fopen): adding to final database dump
+0163.617 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_api_keys.table.gz (66/46/fopen): adding to final database dump
+0163.619 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr28.gz (67/46/fopen): adding to final database dump
+0163.621 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_attribute_taxonomies.table.gz (68/46/fopen): adding to final database dump
+0163.623 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (69/46/fopen): adding to final database dump
+0163.625 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (70/46/fopen): adding to final database dump
+0163.626 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_log.table.tmpr0.gz (71/46/fopen): adding to final database dump
+0163.628 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_log.table.gz (72/46/fopen): adding to final database dump
+0163.629 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_order_items.table.tmpr0.gz (73/46/fopen): adding to final database dump
+0163.631 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_order_items.table.gz (74/46/fopen): adding to final database dump
+0163.633 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (75/46/fopen): adding to final database dump
+0163.635 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_payment_tokens.table.gz (76/46/fopen): adding to final database dump
+0163.637 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_sessions.table.tmpr8.gz (77/46/fopen): adding to final database dump
+0163.638 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_sessions.table.gz (78/46/fopen): adding to final database dump
+0163.640 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr0.gz (79/46/fopen): adding to final database dump
+0163.641 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zone_locations.table.gz (80/46/fopen): adding to final database dump
+0163.643 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr0.gz (81/46/fopen): adding to final database dump
+0163.645 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zone_methods.table.gz (82/46/fopen): adding to final database dump
+0163.647 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zones.table.tmpr0.gz (83/46/fopen): adding to final database dump
+0163.648 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_shipping_zones.table.gz (84/46/fopen): adding to final database dump
+0163.649 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (85/46/fopen): adding to final database dump
+0163.651 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_tax_rate_locations.table.gz (86/46/fopen): adding to final database dump
+0163.652 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_tax_rates.table.tmpr0.gz (87/46/fopen): adding to final database dump
+0163.653 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_woocommerce_tax_rates.table.gz (88/46/fopen): adding to final database dump
+0163.655 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_yith_wcwl.table.tmpr0.gz (89/46/fopen): adding to final database dump
+0163.656 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_yith_wcwl.table.gz (90/46/fopen): adding to final database dump
+0163.657 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_yith_wcwl_lists.table.tmpr0.gz (91/46/fopen): adding to final database dump
+0163.659 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db-table-wp_yith_wcwl_lists.table.gz (92/46/fopen): adding to final database dump
+0163.700 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db.gz: finished writing out complete database file (490.9 KB)
+0163.725 (0) Total database tables backed up: 46 (backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db.gz, size: 502801, sha1: ced3a42d6223143aa2d089de5a7ac1d6686902ac, sha256: a055d5b006b924b95826e1716088fde1e2db6a5b5316e57d5557dcdbfb135c1a)
+0163.732 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0163.734 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0163.736 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0163.738 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-others.zip: others: This file has not yet been successfully uploaded: will queue
+0163.740 (0) backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db.gz: db: This file has not yet been successfully uploaded: will queue
+0163.741 (0) Saving backup history. Total backup size: 55.7 MB
+0163.746 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0163.752 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0163.753 (0) No remote despatch: user chose no remote backup service
+0163.755 (0) Recording as successfully uploaded: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip
+0163.758 (0) Deleting zip manifest (backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-plugins.zip.list.tmp)
+0163.761 (0) Recording as successfully uploaded: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip
+0163.766 (0) Deleting zip manifest (backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-themes.zip.list.tmp)
+0163.769 (0) Recording as successfully uploaded: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-uploads.zip
+0163.773 (0) Deleting zip manifest (backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-uploads.zip.list.tmp)
+0163.775 (0) Recording as successfully uploaded: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-others.zip
+0163.779 (0) Deleting zip manifest (backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-others.zip.list.tmp)
+0163.781 (0) Recording as successfully uploaded: backup_2021-12-23-2247_Charmi_Enterprise_303e358b6117-db.gz
+0163.789 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0163.792 (0) Number of backup sets in history: 1; groups (db): 1
+0163.794 (0) Examining (for databases) backup set with group_id=0, nonce=303e358b6117, datestamp=1640279866 (Dec 23 2021 17:17:46)
+0163.796 (0) This backup set is the backup set just made, so will not be deleted.
+0163.796 (0) Number of backup sets in history: 1; groups (files): 1
+0163.797 (0) Examining (for files) backup set with nonce=303e358b6117, datestamp=1640279866 (Dec 23 2021 17:17:46)
+0163.798 (0) This backup set is the backup set just made, so will not be deleted.
+0163.799 (0) This backup set is the backup set just made, so will not be deleted.
+0163.800 (0) This backup set is the backup set just made, so will not be deleted.
+0163.801 (0) This backup set is the backup set just made, so will not be deleted.
+0163.801 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0163.803 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0163.808 (0) Resume backup (303e358b6117, 0): finish run
+0163.811 (0) Decremented the semaphore (fd) by 1
+0163.814 (0) Semaphore (fd) unlocked
+0163.816 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0163.824 (0) No email will/can be sent - the user has not configured an email address.
+0163.826 (0) The backup apparently succeeded and is now complete

@@ -1,0 +1,2028 @@
+@font-face {
+  font-family: 'wpcicon';
+  src: url('../../../assets/fonts/wpcicon.eot');
+  src: url('../../../assets/fonts/wpcicon.eot#iefix') format('embedded-opentype'),
+  url('../../../assets/fonts/wpcicon.ttf') format('truetype'),
+  url('../../../assets/fonts/wpcicon.woff') format('woff'),
+  url('../../../assets/fonts/wpcicon.svg#wpcicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.wpcmedical-spin {
+  animation: wpcmedical-spin 2s infinite linear;
+}
+
+.wpcmedical-pulse {
+  animation: wpcmedical-spin 1s infinite steps(8);
+}
+
+@keyframes wpcmedical-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin wpcicon {
+  font-family: 'wpcicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="wpcicon-"], [class*=" wpcicon-"] {
+  @include wpcicon;
+}
+
+@function wpcicon-char($filename) {
+  $char: "";
+
+  @if $filename == activity {
+    $char: "\e900";
+  }
+  @if $filename == airplay {
+    $char: "\e901";
+  }
+  @if $filename == alert-circle {
+    $char: "\e902";
+  }
+  @if $filename == alert-octagon {
+    $char: "\e903";
+  }
+  @if $filename == alert-triangle {
+    $char: "\e904";
+  }
+  @if $filename == align-center {
+    $char: "\e905";
+  }
+  @if $filename == align-justify {
+    $char: "\e906";
+  }
+  @if $filename == align-left {
+    $char: "\e907";
+  }
+  @if $filename == align-right {
+    $char: "\e908";
+  }
+  @if $filename == anchor {
+    $char: "\e909";
+  }
+  @if $filename == aperture {
+    $char: "\e90a";
+  }
+  @if $filename == archive {
+    $char: "\e90b";
+  }
+  @if $filename == arrow-down {
+    $char: "\e90c";
+  }
+  @if $filename == arrow-down-circle {
+    $char: "\e90d";
+  }
+  @if $filename == arrow-down-left {
+    $char: "\e90e";
+  }
+  @if $filename == arrow-down-right {
+    $char: "\e90f";
+  }
+  @if $filename == arrow-left {
+    $char: "\e910";
+  }
+  @if $filename == arrow-left-circle {
+    $char: "\e911";
+  }
+  @if $filename == arrow-right {
+    $char: "\e912";
+  }
+  @if $filename == arrow-right-circle {
+    $char: "\e913";
+  }
+  @if $filename == arrow-up {
+    $char: "\e914";
+  }
+  @if $filename == arrow-up-circle {
+    $char: "\e915";
+  }
+  @if $filename == arrow-up-left {
+    $char: "\e916";
+  }
+  @if $filename == arrow-up-right {
+    $char: "\e917";
+  }
+  @if $filename == at-sign {
+    $char: "\e918";
+  }
+  @if $filename == award {
+    $char: "\e919";
+  }
+  @if $filename == bar-chart {
+    $char: "\e91a";
+  }
+  @if $filename == bar-chart-2 {
+    $char: "\e91b";
+  }
+  @if $filename == battery {
+    $char: "\e91c";
+  }
+  @if $filename == battery-charging {
+    $char: "\e91d";
+  }
+  @if $filename == bell {
+    $char: "\e91e";
+  }
+  @if $filename == bell-off {
+    $char: "\e91f";
+  }
+  @if $filename == bluetooth {
+    $char: "\e920";
+  }
+  @if $filename == bold {
+    $char: "\e921";
+  }
+  @if $filename == book {
+    $char: "\e922";
+  }
+  @if $filename == book-open {
+    $char: "\e923";
+  }
+  @if $filename == bookmark {
+    $char: "\e924";
+  }
+  @if $filename == box {
+    $char: "\e925";
+  }
+  @if $filename == briefcase {
+    $char: "\e926";
+  }
+  @if $filename == calendar {
+    $char: "\e927";
+  }
+  @if $filename == camera {
+    $char: "\e928";
+  }
+  @if $filename == camera-off {
+    $char: "\e929";
+  }
+  @if $filename == cast {
+    $char: "\e92a";
+  }
+  @if $filename == check {
+    $char: "\e92b";
+  }
+  @if $filename == check-circle {
+    $char: "\e92c";
+  }
+  @if $filename == check-square {
+    $char: "\e92d";
+  }
+  @if $filename == chevron-down {
+    $char: "\e92e";
+  }
+  @if $filename == chevron-left {
+    $char: "\e92f";
+  }
+  @if $filename == chevron-right {
+    $char: "\e930";
+  }
+  @if $filename == chevron-up {
+    $char: "\e931";
+  }
+  @if $filename == chevrons-down {
+    $char: "\e932";
+  }
+  @if $filename == chevrons-left {
+    $char: "\e933";
+  }
+  @if $filename == chevrons-right {
+    $char: "\e934";
+  }
+  @if $filename == chevrons-up {
+    $char: "\e935";
+  }
+  @if $filename == chrome {
+    $char: "\e936";
+  }
+  @if $filename == circle {
+    $char: "\e937";
+  }
+  @if $filename == clipboard {
+    $char: "\e938";
+  }
+  @if $filename == clock {
+    $char: "\e939";
+  }
+  @if $filename == cloud {
+    $char: "\e93a";
+  }
+  @if $filename == cloud-drizzle {
+    $char: "\e93b";
+  }
+  @if $filename == cloud-lightning {
+    $char: "\e93c";
+  }
+  @if $filename == cloud-off {
+    $char: "\e93d";
+  }
+  @if $filename == cloud-rain {
+    $char: "\e93e";
+  }
+  @if $filename == cloud-snow {
+    $char: "\e93f";
+  }
+  @if $filename == code {
+    $char: "\e940";
+  }
+  @if $filename == codepen {
+    $char: "\e941";
+  }
+  @if $filename == codesandbox {
+    $char: "\e942";
+  }
+  @if $filename == coffee {
+    $char: "\e943";
+  }
+  @if $filename == columns {
+    $char: "\e944";
+  }
+  @if $filename == command {
+    $char: "\e945";
+  }
+  @if $filename == compass {
+    $char: "\e946";
+  }
+  @if $filename == copy {
+    $char: "\e947";
+  }
+  @if $filename == corner-down-left {
+    $char: "\e948";
+  }
+  @if $filename == corner-down-right {
+    $char: "\e949";
+  }
+  @if $filename == corner-left-down {
+    $char: "\e94a";
+  }
+  @if $filename == corner-left-up {
+    $char: "\e94b";
+  }
+  @if $filename == corner-right-down {
+    $char: "\e94c";
+  }
+  @if $filename == corner-right-up {
+    $char: "\e94d";
+  }
+  @if $filename == corner-up-left {
+    $char: "\e94e";
+  }
+  @if $filename == corner-up-right {
+    $char: "\e94f";
+  }
+  @if $filename == cpu {
+    $char: "\e950";
+  }
+  @if $filename == credit-card {
+    $char: "\e951";
+  }
+  @if $filename == crop {
+    $char: "\e952";
+  }
+  @if $filename == crosshair {
+    $char: "\e953";
+  }
+  @if $filename == database {
+    $char: "\e954";
+  }
+  @if $filename == delete {
+    $char: "\e955";
+  }
+  @if $filename == disc {
+    $char: "\e956";
+  }
+  @if $filename == dollar-sign {
+    $char: "\e957";
+  }
+  @if $filename == download {
+    $char: "\e958";
+  }
+  @if $filename == download-cloud {
+    $char: "\e959";
+  }
+  @if $filename == droplet {
+    $char: "\e95a";
+  }
+  @if $filename == edit {
+    $char: "\e95b";
+  }
+  @if $filename == edit-2 {
+    $char: "\e95c";
+  }
+  @if $filename == edit-3 {
+    $char: "\e95d";
+  }
+  @if $filename == external-link {
+    $char: "\e95e";
+  }
+  @if $filename == eye {
+    $char: "\e95f";
+  }
+  @if $filename == eye-off {
+    $char: "\e960";
+  }
+  @if $filename == facebook {
+    $char: "\e961";
+  }
+  @if $filename == fast-forward {
+    $char: "\e962";
+  }
+  @if $filename == feather {
+    $char: "\e963";
+  }
+  @if $filename == figma {
+    $char: "\e964";
+  }
+  @if $filename == file {
+    $char: "\e965";
+  }
+  @if $filename == file-minus {
+    $char: "\e966";
+  }
+  @if $filename == file-plus {
+    $char: "\e967";
+  }
+  @if $filename == file-text {
+    $char: "\e968";
+  }
+  @if $filename == film {
+    $char: "\e969";
+  }
+  @if $filename == filter {
+    $char: "\e96a";
+  }
+  @if $filename == flag {
+    $char: "\e96b";
+  }
+  @if $filename == folder {
+    $char: "\e96c";
+  }
+  @if $filename == folder-minus {
+    $char: "\e96d";
+  }
+  @if $filename == folder-plus {
+    $char: "\e96e";
+  }
+  @if $filename == framer {
+    $char: "\e96f";
+  }
+  @if $filename == frown {
+    $char: "\e970";
+  }
+  @if $filename == gift {
+    $char: "\e971";
+  }
+  @if $filename == git-branch {
+    $char: "\e972";
+  }
+  @if $filename == git-commit {
+    $char: "\e973";
+  }
+  @if $filename == git-merge {
+    $char: "\e974";
+  }
+  @if $filename == git-pull-request {
+    $char: "\e975";
+  }
+  @if $filename == github {
+    $char: "\e976";
+  }
+  @if $filename == gitlab {
+    $char: "\e977";
+  }
+  @if $filename == globe {
+    $char: "\e978";
+  }
+  @if $filename == grid {
+    $char: "\e979";
+  }
+  @if $filename == hard-drive {
+    $char: "\e97a";
+  }
+  @if $filename == hash {
+    $char: "\e97b";
+  }
+  @if $filename == headphones {
+    $char: "\e97c";
+  }
+  @if $filename == heart {
+    $char: "\e97d";
+  }
+  @if $filename == help-circle {
+    $char: "\e97e";
+  }
+  @if $filename == hexagon {
+    $char: "\e97f";
+  }
+  @if $filename == home {
+    $char: "\e980";
+  }
+  @if $filename == image {
+    $char: "\e981";
+  }
+  @if $filename == inbox {
+    $char: "\e982";
+  }
+  @if $filename == info {
+    $char: "\e983";
+  }
+  @if $filename == instagram {
+    $char: "\e984";
+  }
+  @if $filename == italic {
+    $char: "\e985";
+  }
+  @if $filename == key {
+    $char: "\e986";
+  }
+  @if $filename == layers {
+    $char: "\e987";
+  }
+  @if $filename == layout {
+    $char: "\e988";
+  }
+  @if $filename == life-buoy {
+    $char: "\e989";
+  }
+  @if $filename == link {
+    $char: "\e98a";
+  }
+  @if $filename == link-2 {
+    $char: "\e98b";
+  }
+  @if $filename == linkedin {
+    $char: "\e98c";
+  }
+  @if $filename == list {
+    $char: "\e98d";
+  }
+  @if $filename == loader {
+    $char: "\e98e";
+  }
+  @if $filename == lock {
+    $char: "\e98f";
+  }
+  @if $filename == log-in {
+    $char: "\e990";
+  }
+  @if $filename == log-out {
+    $char: "\e991";
+  }
+  @if $filename == mail {
+    $char: "\e992";
+  }
+  @if $filename == map {
+    $char: "\e993";
+  }
+  @if $filename == map-pin {
+    $char: "\e994";
+  }
+  @if $filename == maximize {
+    $char: "\e995";
+  }
+  @if $filename == maximize-2 {
+    $char: "\e996";
+  }
+  @if $filename == meh {
+    $char: "\e997";
+  }
+  @if $filename == menu {
+    $char: "\e998";
+  }
+  @if $filename == message-circle {
+    $char: "\e999";
+  }
+  @if $filename == message-square {
+    $char: "\e99a";
+  }
+  @if $filename == mic {
+    $char: "\e99b";
+  }
+  @if $filename == mic-off {
+    $char: "\e99c";
+  }
+  @if $filename == minimize {
+    $char: "\e99d";
+  }
+  @if $filename == minimize-2 {
+    $char: "\e99e";
+  }
+  @if $filename == minus {
+    $char: "\e99f";
+  }
+  @if $filename == minus-circle {
+    $char: "\e9a0";
+  }
+  @if $filename == minus-square {
+    $char: "\e9a1";
+  }
+  @if $filename == monitor {
+    $char: "\e9a2";
+  }
+  @if $filename == moon {
+    $char: "\e9a3";
+  }
+  @if $filename == more-horizontal {
+    $char: "\e9a4";
+  }
+  @if $filename == more-vertical {
+    $char: "\e9a5";
+  }
+  @if $filename == mouse-pointer {
+    $char: "\e9a6";
+  }
+  @if $filename == move {
+    $char: "\e9a7";
+  }
+  @if $filename == music {
+    $char: "\e9a8";
+  }
+  @if $filename == navigation {
+    $char: "\e9a9";
+  }
+  @if $filename == navigation-2 {
+    $char: "\e9aa";
+  }
+  @if $filename == octagon {
+    $char: "\e9ab";
+  }
+  @if $filename == package {
+    $char: "\e9ac";
+  }
+  @if $filename == paperclip {
+    $char: "\e9ad";
+  }
+  @if $filename == pause {
+    $char: "\e9ae";
+  }
+  @if $filename == pause-circle {
+    $char: "\e9af";
+  }
+  @if $filename == pen-tool {
+    $char: "\e9b0";
+  }
+  @if $filename == percent {
+    $char: "\e9b1";
+  }
+  @if $filename == phone {
+    $char: "\e9b2";
+  }
+  @if $filename == phone-call {
+    $char: "\e9b3";
+  }
+  @if $filename == phone-forwarded {
+    $char: "\e9b4";
+  }
+  @if $filename == phone-incoming {
+    $char: "\e9b5";
+  }
+  @if $filename == phone-missed {
+    $char: "\e9b6";
+  }
+  @if $filename == phone-off {
+    $char: "\e9b7";
+  }
+  @if $filename == phone-outgoing {
+    $char: "\e9b8";
+  }
+  @if $filename == pie-chart {
+    $char: "\e9b9";
+  }
+  @if $filename == play {
+    $char: "\e9ba";
+  }
+  @if $filename == play-circle {
+    $char: "\e9bb";
+  }
+  @if $filename == plus {
+    $char: "\e9bc";
+  }
+  @if $filename == plus-circle {
+    $char: "\e9bd";
+  }
+  @if $filename == plus-square {
+    $char: "\e9be";
+  }
+  @if $filename == pocket {
+    $char: "\e9bf";
+  }
+  @if $filename == power {
+    $char: "\e9c0";
+  }
+  @if $filename == printer {
+    $char: "\e9c1";
+  }
+  @if $filename == radio {
+    $char: "\e9c2";
+  }
+  @if $filename == refresh-ccw {
+    $char: "\e9c3";
+  }
+  @if $filename == refresh-cw {
+    $char: "\e9c4";
+  }
+  @if $filename == repeat {
+    $char: "\e9c5";
+  }
+  @if $filename == rewind {
+    $char: "\e9c6";
+  }
+  @if $filename == rotate-ccw {
+    $char: "\e9c7";
+  }
+  @if $filename == rotate-cw {
+    $char: "\e9c8";
+  }
+  @if $filename == rss {
+    $char: "\e9c9";
+  }
+  @if $filename == save {
+    $char: "\e9ca";
+  }
+  @if $filename == scissors {
+    $char: "\e9cb";
+  }
+  @if $filename == search {
+    $char: "\e9cc";
+  }
+  @if $filename == send {
+    $char: "\e9cd";
+  }
+  @if $filename == server {
+    $char: "\e9ce";
+  }
+  @if $filename == settings {
+    $char: "\e9cf";
+  }
+  @if $filename == share {
+    $char: "\e9d0";
+  }
+  @if $filename == share-2 {
+    $char: "\e9d1";
+  }
+  @if $filename == shield {
+    $char: "\e9d2";
+  }
+  @if $filename == shield-off {
+    $char: "\e9d3";
+  }
+  @if $filename == shopping-bag {
+    $char: "\e9d4";
+  }
+  @if $filename == shopping-cart {
+    $char: "\e9d5";
+  }
+  @if $filename == shuffle {
+    $char: "\e9d6";
+  }
+  @if $filename == sidebar {
+    $char: "\e9d7";
+  }
+  @if $filename == skip-back {
+    $char: "\e9d8";
+  }
+  @if $filename == skip-forward {
+    $char: "\e9d9";
+  }
+  @if $filename == slack {
+    $char: "\e9da";
+  }
+  @if $filename == slash {
+    $char: "\e9db";
+  }
+  @if $filename == sliders {
+    $char: "\e9dc";
+  }
+  @if $filename == smartphone {
+    $char: "\e9dd";
+  }
+  @if $filename == smile {
+    $char: "\e9de";
+  }
+  @if $filename == speaker {
+    $char: "\e9df";
+  }
+  @if $filename == square {
+    $char: "\e9e0";
+  }
+  @if $filename == star {
+    $char: "\e9e1";
+  }
+  @if $filename == stop-circle {
+    $char: "\e9e2";
+  }
+  @if $filename == sun {
+    $char: "\e9e3";
+  }
+  @if $filename == sunrise {
+    $char: "\e9e4";
+  }
+  @if $filename == sunset {
+    $char: "\e9e5";
+  }
+  @if $filename == tablet {
+    $char: "\e9e6";
+  }
+  @if $filename == tag {
+    $char: "\e9e7";
+  }
+  @if $filename == target {
+    $char: "\e9e8";
+  }
+  @if $filename == terminal {
+    $char: "\e9e9";
+  }
+  @if $filename == thermometer {
+    $char: "\e9ea";
+  }
+  @if $filename == thumbs-down {
+    $char: "\e9eb";
+  }
+  @if $filename == thumbs-up {
+    $char: "\e9ec";
+  }
+  @if $filename == toggle-left {
+    $char: "\e9ed";
+  }
+  @if $filename == toggle-right {
+    $char: "\e9ee";
+  }
+  @if $filename == tool {
+    $char: "\e9ef";
+  }
+  @if $filename == trash {
+    $char: "\e9f0";
+  }
+  @if $filename == trash-2 {
+    $char: "\e9f1";
+  }
+  @if $filename == trello {
+    $char: "\e9f2";
+  }
+  @if $filename == trending-down {
+    $char: "\e9f3";
+  }
+  @if $filename == trending-up {
+    $char: "\e9f4";
+  }
+  @if $filename == triangle {
+    $char: "\e9f5";
+  }
+  @if $filename == truck {
+    $char: "\e9f6";
+  }
+  @if $filename == tv {
+    $char: "\e9f7";
+  }
+  @if $filename == twitch {
+    $char: "\e9f8";
+  }
+  @if $filename == twitter {
+    $char: "\e9f9";
+  }
+  @if $filename == type {
+    $char: "\e9fa";
+  }
+  @if $filename == umbrella {
+    $char: "\e9fb";
+  }
+  @if $filename == underline {
+    $char: "\e9fc";
+  }
+  @if $filename == unlock {
+    $char: "\e9fd";
+  }
+  @if $filename == upload {
+    $char: "\e9fe";
+  }
+  @if $filename == upload-cloud {
+    $char: "\e9ff";
+  }
+  @if $filename == user {
+    $char: "\ea00";
+  }
+  @if $filename == user-check {
+    $char: "\ea01";
+  }
+  @if $filename == user-minus {
+    $char: "\ea02";
+  }
+  @if $filename == user-plus {
+    $char: "\ea03";
+  }
+  @if $filename == user-x {
+    $char: "\ea04";
+  }
+  @if $filename == users {
+    $char: "\ea05";
+  }
+  @if $filename == video {
+    $char: "\ea06";
+  }
+  @if $filename == video-off {
+    $char: "\ea07";
+  }
+  @if $filename == voicemail {
+    $char: "\ea08";
+  }
+  @if $filename == volume {
+    $char: "\ea09";
+  }
+  @if $filename == volume-1 {
+    $char: "\ea0a";
+  }
+  @if $filename == volume-2 {
+    $char: "\ea0b";
+  }
+  @if $filename == volume-x {
+    $char: "\ea0c";
+  }
+  @if $filename == watch {
+    $char: "\ea0d";
+  }
+  @if $filename == wifi {
+    $char: "\ea0e";
+  }
+  @if $filename == wifi-off {
+    $char: "\ea0f";
+  }
+  @if $filename == wind {
+    $char: "\ea10";
+  }
+  @if $filename == x {
+    $char: "\ea11";
+  }
+  @if $filename == x-circle {
+    $char: "\ea12";
+  }
+  @if $filename == x-octagon {
+    $char: "\ea13";
+  }
+  @if $filename == x-square {
+    $char: "\ea14";
+  }
+  @if $filename == youtube {
+    $char: "\ea15";
+  }
+  @if $filename == zap {
+    $char: "\ea16";
+  }
+  @if $filename == zap-off {
+    $char: "\ea17";
+  }
+  @if $filename == zoom-in {
+    $char: "\ea18";
+  }
+  @if $filename == zoom-out {
+    $char: "\ea19";
+  }
+
+  @return $char;
+}
+
+.wpcicon-activity:before {
+  content: "\e900";
+}
+
+.wpcicon-airplay:before {
+  content: "\e901";
+}
+
+.wpcicon-alert-circle:before {
+  content: "\e902";
+}
+
+.wpcicon-alert-octagon:before {
+  content: "\e903";
+}
+
+.wpcicon-alert-triangle:before {
+  content: "\e904";
+}
+
+.wpcicon-align-center:before {
+  content: "\e905";
+}
+
+.wpcicon-align-justify:before {
+  content: "\e906";
+}
+
+.wpcicon-align-left:before {
+  content: "\e907";
+}
+
+.wpcicon-align-right:before {
+  content: "\e908";
+}
+
+.wpcicon-anchor:before {
+  content: "\e909";
+}
+
+.wpcicon-aperture:before {
+  content: "\e90a";
+}
+
+.wpcicon-archive:before {
+  content: "\e90b";
+}
+
+.wpcicon-arrow-down:before {
+  content: "\e90c";
+}
+
+.wpcicon-arrow-down-circle:before {
+  content: "\e90d";
+}
+
+.wpcicon-arrow-down-left:before {
+  content: "\e90e";
+}
+
+.wpcicon-arrow-down-right:before {
+  content: "\e90f";
+}
+
+.wpcicon-arrow-left:before {
+  content: "\e910";
+}
+
+.wpcicon-arrow-left-circle:before {
+  content: "\e911";
+}
+
+.wpcicon-arrow-right:before {
+  content: "\e912";
+}
+
+.wpcicon-arrow-right-circle:before {
+  content: "\e913";
+}
+
+.wpcicon-arrow-up:before {
+  content: "\e914";
+}
+
+.wpcicon-arrow-up-circle:before {
+  content: "\e915";
+}
+
+.wpcicon-arrow-up-left:before {
+  content: "\e916";
+}
+
+.wpcicon-arrow-up-right:before {
+  content: "\e917";
+}
+
+.wpcicon-at-sign:before {
+  content: "\e918";
+}
+
+.wpcicon-award:before {
+  content: "\e919";
+}
+
+.wpcicon-bar-chart:before {
+  content: "\e91a";
+}
+
+.wpcicon-bar-chart-2:before {
+  content: "\e91b";
+}
+
+.wpcicon-battery:before {
+  content: "\e91c";
+}
+
+.wpcicon-battery-charging:before {
+  content: "\e91d";
+}
+
+.wpcicon-bell:before {
+  content: "\e91e";
+}
+
+.wpcicon-bell-off:before {
+  content: "\e91f";
+}
+
+.wpcicon-bluetooth:before {
+  content: "\e920";
+}
+
+.wpcicon-bold:before {
+  content: "\e921";
+}
+
+.wpcicon-book:before {
+  content: "\e922";
+}
+
+.wpcicon-book-open:before {
+  content: "\e923";
+}
+
+.wpcicon-bookmark:before {
+  content: "\e924";
+}
+
+.wpcicon-box:before {
+  content: "\e925";
+}
+
+.wpcicon-briefcase:before {
+  content: "\e926";
+}
+
+.wpcicon-calendar:before {
+  content: "\e927";
+}
+
+.wpcicon-camera:before {
+  content: "\e928";
+}
+
+.wpcicon-camera-off:before {
+  content: "\e929";
+}
+
+.wpcicon-cast:before {
+  content: "\e92a";
+}
+
+.wpcicon-check:before {
+  content: "\e92b";
+}
+
+.wpcicon-check-circle:before {
+  content: "\e92c";
+}
+
+.wpcicon-check-square:before {
+  content: "\e92d";
+}
+
+.wpcicon-chevron-down:before {
+  content: "\e92e";
+}
+
+.wpcicon-chevron-left:before {
+  content: "\e92f";
+}
+
+.wpcicon-chevron-right:before {
+  content: "\e930";
+}
+
+.wpcicon-chevron-up:before {
+  content: "\e931";
+}
+
+.wpcicon-chevrons-down:before {
+  content: "\e932";
+}
+
+.wpcicon-chevrons-left:before {
+  content: "\e933";
+}
+
+.wpcicon-chevrons-right:before {
+  content: "\e934";
+}
+
+.wpcicon-chevrons-up:before {
+  content: "\e935";
+}
+
+.wpcicon-chrome:before {
+  content: "\e936";
+}
+
+.wpcicon-circle:before {
+  content: "\e937";
+}
+
+.wpcicon-clipboard:before {
+  content: "\e938";
+}
+
+.wpcicon-clock:before {
+  content: "\e939";
+}
+
+.wpcicon-cloud:before {
+  content: "\e93a";
+}
+
+.wpcicon-cloud-drizzle:before {
+  content: "\e93b";
+}
+
+.wpcicon-cloud-lightning:before {
+  content: "\e93c";
+}
+
+.wpcicon-cloud-off:before {
+  content: "\e93d";
+}
+
+.wpcicon-cloud-rain:before {
+  content: "\e93e";
+}
+
+.wpcicon-cloud-snow:before {
+  content: "\e93f";
+}
+
+.wpcicon-code:before {
+  content: "\e940";
+}
+
+.wpcicon-codepen:before {
+  content: "\e941";
+}
+
+.wpcicon-codesandbox:before {
+  content: "\e942";
+}
+
+.wpcicon-coffee:before {
+  content: "\e943";
+}
+
+.wpcicon-columns:before {
+  content: "\e944";
+}
+
+.wpcicon-command:before {
+  content: "\e945";
+}
+
+.wpcicon-compass:before {
+  content: "\e946";
+}
+
+.wpcicon-copy:before {
+  content: "\e947";
+}
+
+.wpcicon-corner-down-left:before {
+  content: "\e948";
+}
+
+.wpcicon-corner-down-right:before {
+  content: "\e949";
+}
+
+.wpcicon-corner-left-down:before {
+  content: "\e94a";
+}
+
+.wpcicon-corner-left-up:before {
+  content: "\e94b";
+}
+
+.wpcicon-corner-right-down:before {
+  content: "\e94c";
+}
+
+.wpcicon-corner-right-up:before {
+  content: "\e94d";
+}
+
+.wpcicon-corner-up-left:before {
+  content: "\e94e";
+}
+
+.wpcicon-corner-up-right:before {
+  content: "\e94f";
+}
+
+.wpcicon-cpu:before {
+  content: "\e950";
+}
+
+.wpcicon-credit-card:before {
+  content: "\e951";
+}
+
+.wpcicon-crop:before {
+  content: "\e952";
+}
+
+.wpcicon-crosshair:before {
+  content: "\e953";
+}
+
+.wpcicon-database:before {
+  content: "\e954";
+}
+
+.wpcicon-delete:before {
+  content: "\e955";
+}
+
+.wpcicon-disc:before {
+  content: "\e956";
+}
+
+.wpcicon-dollar-sign:before {
+  content: "\e957";
+}
+
+.wpcicon-download:before {
+  content: "\e958";
+}
+
+.wpcicon-download-cloud:before {
+  content: "\e959";
+}
+
+.wpcicon-droplet:before {
+  content: "\e95a";
+}
+
+.wpcicon-edit:before {
+  content: "\e95b";
+}
+
+.wpcicon-edit-2:before {
+  content: "\e95c";
+}
+
+.wpcicon-edit-3:before {
+  content: "\e95d";
+}
+
+.wpcicon-external-link:before {
+  content: "\e95e";
+}
+
+.wpcicon-eye:before {
+  content: "\e95f";
+}
+
+.wpcicon-eye-off:before {
+  content: "\e960";
+}
+
+.wpcicon-facebook:before {
+  content: "\e961";
+}
+
+.wpcicon-fast-forward:before {
+  content: "\e962";
+}
+
+.wpcicon-feather:before {
+  content: "\e963";
+}
+
+.wpcicon-figma:before {
+  content: "\e964";
+}
+
+.wpcicon-file:before {
+  content: "\e965";
+}
+
+.wpcicon-file-minus:before {
+  content: "\e966";
+}
+
+.wpcicon-file-plus:before {
+  content: "\e967";
+}
+
+.wpcicon-file-text:before {
+  content: "\e968";
+}
+
+.wpcicon-film:before {
+  content: "\e969";
+}
+
+.wpcicon-filter:before {
+  content: "\e96a";
+}
+
+.wpcicon-flag:before {
+  content: "\e96b";
+}
+
+.wpcicon-folder:before {
+  content: "\e96c";
+}
+
+.wpcicon-folder-minus:before {
+  content: "\e96d";
+}
+
+.wpcicon-folder-plus:before {
+  content: "\e96e";
+}
+
+.wpcicon-framer:before {
+  content: "\e96f";
+}
+
+.wpcicon-frown:before {
+  content: "\e970";
+}
+
+.wpcicon-gift:before {
+  content: "\e971";
+}
+
+.wpcicon-git-branch:before {
+  content: "\e972";
+}
+
+.wpcicon-git-commit:before {
+  content: "\e973";
+}
+
+.wpcicon-git-merge:before {
+  content: "\e974";
+}
+
+.wpcicon-git-pull-request:before {
+  content: "\e975";
+}
+
+.wpcicon-github:before {
+  content: "\e976";
+}
+
+.wpcicon-gitlab:before {
+  content: "\e977";
+}
+
+.wpcicon-globe:before {
+  content: "\e978";
+}
+
+.wpcicon-grid:before {
+  content: "\e979";
+}
+
+.wpcicon-hard-drive:before {
+  content: "\e97a";
+}
+
+.wpcicon-hash:before {
+  content: "\e97b";
+}
+
+.wpcicon-headphones:before {
+  content: "\e97c";
+}
+
+.wpcicon-heart:before {
+  content: "\e97d";
+}
+
+.wpcicon-help-circle:before {
+  content: "\e97e";
+}
+
+.wpcicon-hexagon:before {
+  content: "\e97f";
+}
+
+.wpcicon-home:before {
+  content: "\e980";
+}
+
+.wpcicon-image:before {
+  content: "\e981";
+}
+
+.wpcicon-inbox:before {
+  content: "\e982";
+}
+
+.wpcicon-info:before {
+  content: "\e983";
+}
+
+.wpcicon-instagram:before {
+  content: "\e984";
+}
+
+.wpcicon-italic:before {
+  content: "\e985";
+}
+
+.wpcicon-key:before {
+  content: "\e986";
+}
+
+.wpcicon-layers:before {
+  content: "\e987";
+}
+
+.wpcicon-layout:before {
+  content: "\e988";
+}
+
+.wpcicon-life-buoy:before {
+  content: "\e989";
+}
+
+.wpcicon-link:before {
+  content: "\e98a";
+}
+
+.wpcicon-link-2:before {
+  content: "\e98b";
+}
+
+.wpcicon-linkedin:before {
+  content: "\e98c";
+}
+
+.wpcicon-list:before {
+  content: "\e98d";
+}
+
+.wpcicon-loader:before {
+  content: "\e98e";
+}
+
+.wpcicon-lock:before {
+  content: "\e98f";
+}
+
+.wpcicon-log-in:before {
+  content: "\e990";
+}
+
+.wpcicon-log-out:before {
+  content: "\e991";
+}
+
+.wpcicon-mail:before {
+  content: "\e992";
+}
+
+.wpcicon-map:before {
+  content: "\e993";
+}
+
+.wpcicon-map-pin:before {
+  content: "\e994";
+}
+
+.wpcicon-maximize:before {
+  content: "\e995";
+}
+
+.wpcicon-maximize-2:before {
+  content: "\e996";
+}
+
+.wpcicon-meh:before {
+  content: "\e997";
+}
+
+.wpcicon-menu:before {
+  content: "\e998";
+}
+
+.wpcicon-message-circle:before {
+  content: "\e999";
+}
+
+.wpcicon-message-square:before {
+  content: "\e99a";
+}
+
+.wpcicon-mic:before {
+  content: "\e99b";
+}
+
+.wpcicon-mic-off:before {
+  content: "\e99c";
+}
+
+.wpcicon-minimize:before {
+  content: "\e99d";
+}
+
+.wpcicon-minimize-2:before {
+  content: "\e99e";
+}
+
+.wpcicon-minus:before {
+  content: "\e99f";
+}
+
+.wpcicon-minus-circle:before {
+  content: "\e9a0";
+}
+
+.wpcicon-minus-square:before {
+  content: "\e9a1";
+}
+
+.wpcicon-monitor:before {
+  content: "\e9a2";
+}
+
+.wpcicon-moon:before {
+  content: "\e9a3";
+}
+
+.wpcicon-more-horizontal:before {
+  content: "\e9a4";
+}
+
+.wpcicon-more-vertical:before {
+  content: "\e9a5";
+}
+
+.wpcicon-mouse-pointer:before {
+  content: "\e9a6";
+}
+
+.wpcicon-move:before {
+  content: "\e9a7";
+}
+
+.wpcicon-music:before {
+  content: "\e9a8";
+}
+
+.wpcicon-navigation:before {
+  content: "\e9a9";
+}
+
+.wpcicon-navigation-2:before {
+  content: "\e9aa";
+}
+
+.wpcicon-octagon:before {
+  content: "\e9ab";
+}
+
+.wpcicon-package:before {
+  content: "\e9ac";
+}
+
+.wpcicon-paperclip:before {
+  content: "\e9ad";
+}
+
+.wpcicon-pause:before {
+  content: "\e9ae";
+}
+
+.wpcicon-pause-circle:before {
+  content: "\e9af";
+}
+
+.wpcicon-pen-tool:before {
+  content: "\e9b0";
+}
+
+.wpcicon-percent:before {
+  content: "\e9b1";
+}
+
+.wpcicon-phone:before {
+  content: "\e9b2";
+}
+
+.wpcicon-phone-call:before {
+  content: "\e9b3";
+}
+
+.wpcicon-phone-forwarded:before {
+  content: "\e9b4";
+}
+
+.wpcicon-phone-incoming:before {
+  content: "\e9b5";
+}
+
+.wpcicon-phone-missed:before {
+  content: "\e9b6";
+}
+
+.wpcicon-phone-off:before {
+  content: "\e9b7";
+}
+
+.wpcicon-phone-outgoing:before {
+  content: "\e9b8";
+}
+
+.wpcicon-pie-chart:before {
+  content: "\e9b9";
+}
+
+.wpcicon-play:before {
+  content: "\e9ba";
+}
+
+.wpcicon-play-circle:before {
+  content: "\e9bb";
+}
+
+.wpcicon-plus:before {
+  content: "\e9bc";
+}
+
+.wpcicon-plus-circle:before {
+  content: "\e9bd";
+}
+
+.wpcicon-plus-square:before {
+  content: "\e9be";
+}
+
+.wpcicon-pocket:before {
+  content: "\e9bf";
+}
+
+.wpcicon-power:before {
+  content: "\e9c0";
+}
+
+.wpcicon-printer:before {
+  content: "\e9c1";
+}
+
+.wpcicon-radio:before {
+  content: "\e9c2";
+}
+
+.wpcicon-refresh-ccw:before {
+  content: "\e9c3";
+}
+
+.wpcicon-refresh-cw:before {
+  content: "\e9c4";
+}
+
+.wpcicon-repeat:before {
+  content: "\e9c5";
+}
+
+.wpcicon-rewind:before {
+  content: "\e9c6";
+}
+
+.wpcicon-rotate-ccw:before {
+  content: "\e9c7";
+}
+
+.wpcicon-rotate-cw:before {
+  content: "\e9c8";
+}
+
+.wpcicon-rss:before {
+  content: "\e9c9";
+}
+
+.wpcicon-save:before {
+  content: "\e9ca";
+}
+
+.wpcicon-scissors:before {
+  content: "\e9cb";
+}
+
+.wpcicon-search:before {
+  content: "\e9cc";
+}
+
+.wpcicon-send:before {
+  content: "\e9cd";
+}
+
+.wpcicon-server:before {
+  content: "\e9ce";
+}
+
+.wpcicon-settings:before {
+  content: "\e9cf";
+}
+
+.wpcicon-share:before {
+  content: "\e9d0";
+}
+
+.wpcicon-share-2:before {
+  content: "\e9d1";
+}
+
+.wpcicon-shield:before {
+  content: "\e9d2";
+}
+
+.wpcicon-shield-off:before {
+  content: "\e9d3";
+}
+
+.wpcicon-shopping-bag:before {
+  content: "\e9d4";
+}
+
+.wpcicon-shopping-cart:before {
+  content: "\e9d5";
+}
+
+.wpcicon-shuffle:before {
+  content: "\e9d6";
+}
+
+.wpcicon-sidebar:before {
+  content: "\e9d7";
+}
+
+.wpcicon-skip-back:before {
+  content: "\e9d8";
+}
+
+.wpcicon-skip-forward:before {
+  content: "\e9d9";
+}
+
+.wpcicon-slack:before {
+  content: "\e9da";
+}
+
+.wpcicon-slash:before {
+  content: "\e9db";
+}
+
+.wpcicon-sliders:before {
+  content: "\e9dc";
+}
+
+.wpcicon-smartphone:before {
+  content: "\e9dd";
+}
+
+.wpcicon-smile:before {
+  content: "\e9de";
+}
+
+.wpcicon-speaker:before {
+  content: "\e9df";
+}
+
+.wpcicon-square:before {
+  content: "\e9e0";
+}
+
+.wpcicon-star:before {
+  content: "\e9e1";
+}
+
+.wpcicon-stop-circle:before {
+  content: "\e9e2";
+}
+
+.wpcicon-sun:before {
+  content: "\e9e3";
+}
+
+.wpcicon-sunrise:before {
+  content: "\e9e4";
+}
+
+.wpcicon-sunset:before {
+  content: "\e9e5";
+}
+
+.wpcicon-tablet:before {
+  content: "\e9e6";
+}
+
+.wpcicon-tag:before {
+  content: "\e9e7";
+}
+
+.wpcicon-target:before {
+  content: "\e9e8";
+}
+
+.wpcicon-terminal:before {
+  content: "\e9e9";
+}
+
+.wpcicon-thermometer:before {
+  content: "\e9ea";
+}
+
+.wpcicon-thumbs-down:before {
+  content: "\e9eb";
+}
+
+.wpcicon-thumbs-up:before {
+  content: "\e9ec";
+}
+
+.wpcicon-toggle-left:before {
+  content: "\e9ed";
+}
+
+.wpcicon-toggle-right:before {
+  content: "\e9ee";
+}
+
+.wpcicon-tool:before {
+  content: "\e9ef";
+}
+
+.wpcicon-trash:before {
+  content: "\e9f0";
+}
+
+.wpcicon-trash-2:before {
+  content: "\e9f1";
+}
+
+.wpcicon-trello:before {
+  content: "\e9f2";
+}
+
+.wpcicon-trending-down:before {
+  content: "\e9f3";
+}
+
+.wpcicon-trending-up:before {
+  content: "\e9f4";
+}
+
+.wpcicon-triangle:before {
+  content: "\e9f5";
+}
+
+.wpcicon-truck:before {
+  content: "\e9f6";
+}
+
+.wpcicon-tv:before {
+  content: "\e9f7";
+}
+
+.wpcicon-twitch:before {
+  content: "\e9f8";
+}
+
+.wpcicon-twitter:before {
+  content: "\e9f9";
+}
+
+.wpcicon-type:before {
+  content: "\e9fa";
+}
+
+.wpcicon-umbrella:before {
+  content: "\e9fb";
+}
+
+.wpcicon-underline:before {
+  content: "\e9fc";
+}
+
+.wpcicon-unlock:before {
+  content: "\e9fd";
+}
+
+.wpcicon-upload:before {
+  content: "\e9fe";
+}
+
+.wpcicon-upload-cloud:before {
+  content: "\e9ff";
+}
+
+.wpcicon-user:before {
+  content: "\ea00";
+}
+
+.wpcicon-user-check:before {
+  content: "\ea01";
+}
+
+.wpcicon-user-minus:before {
+  content: "\ea02";
+}
+
+.wpcicon-user-plus:before {
+  content: "\ea03";
+}
+
+.wpcicon-user-x:before {
+  content: "\ea04";
+}
+
+.wpcicon-users:before {
+  content: "\ea05";
+}
+
+.wpcicon-video:before {
+  content: "\ea06";
+}
+
+.wpcicon-video-off:before {
+  content: "\ea07";
+}
+
+.wpcicon-voicemail:before {
+  content: "\ea08";
+}
+
+.wpcicon-volume:before {
+  content: "\ea09";
+}
+
+.wpcicon-volume-1:before {
+  content: "\ea0a";
+}
+
+.wpcicon-volume-2:before {
+  content: "\ea0b";
+}
+
+.wpcicon-volume-x:before {
+  content: "\ea0c";
+}
+
+.wpcicon-watch:before {
+  content: "\ea0d";
+}
+
+.wpcicon-wifi:before {
+  content: "\ea0e";
+}
+
+.wpcicon-wifi-off:before {
+  content: "\ea0f";
+}
+
+.wpcicon-wind:before {
+  content: "\ea10";
+}
+
+.wpcicon-x:before {
+  content: "\ea11";
+}
+
+.wpcicon-x-circle:before {
+  content: "\ea12";
+}
+
+.wpcicon-x-octagon:before {
+  content: "\ea13";
+}
+
+.wpcicon-x-square:before {
+  content: "\ea14";
+}
+
+.wpcicon-youtube:before {
+  content: "\ea15";
+}
+
+.wpcicon-zap:before {
+  content: "\ea16";
+}
+
+.wpcicon-zap-off:before {
+  content: "\ea17";
+}
+
+.wpcicon-zoom-in:before {
+  content: "\ea18";
+}
+
+.wpcicon-zoom-out:before {
+  content: "\ea19";
+}

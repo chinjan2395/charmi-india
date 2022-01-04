@@ -1,0 +1,493 @@
+/*!
+Theme Name: Bosa Store
+Theme URI: https://bosathemes.com/bosa-store
+Author: Bosa Themes
+Author URI: https://bosathemes.com
+Description: Bosa Store is multipurpose eCommerce theme. Bosa Store is beautiful, fast, lightweight, responsive, extremely customizable theme that you can use as a foundation to build versatile sites such as e-commerce, beauty products, women's fashion, smart home products, sports, toy shops, gadgets stores, jewelry shops, men's clothing, electronics, furniture, retail, digital products and preferably ideal for any type of eCommerce sites. Bosa Store is a child theme of Bosa, a free multipurpose WordPress theme. Bosa Store works perfectly with Gutenberg and the most popular page builder Elementor that can easily drag-and-drop your ideas from the interface. Bosa Store is built with SEO, speed, and usability in mind with the multiple Header & Footer layouts, predesigned starter sites includes awesome Home & Inner Pages that is incredibly customizable and powerful enough to take a stand among the crowd. Bosa Store is compatible with all major plugins like WooCommerce, Yoast, Contact form 7, Mailchimp for WordPress, bbPress, etc. Looking for a Multipurpose eCommerce theme? Look no further! Browse the demo to see that it's the only theme you will ever need: https://demo.bosathemes.com/bosa/store
+Version: 1.0.1
+Requires PHP: 5.5
+Tested up to: 5.8
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: bosa
+Text Domain: bosa-store
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Bosa Store WordPress Theme, Copyright 2021 Bosa Themes
+Bosa Store is distributed under the terms of the GNU General Public License v3
+
+Bosa Store is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+body {
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  color: #111111;
+  font-family: 'Jost', serif;
+  font-weight: 500;
+}
+
+.wp-block-quote {
+  padding: 30px 30px 30px 50px;
+  margin: 30px 0 30px 30px;
+}
+
+.site-header .site-branding .site-title {
+  font-family: 'Jost', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.site-header .site-branding .site-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.main-navigation ul.menu > li > a {
+  font-family: 'Jost', serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.section-banner .banner-content .entry-title {
+  font-family: 'Jost', serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.section-banner .banner-content .entry-meta a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+.section-banner .banner-content .entry-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: initial;
+}
+
+.feature-posts-content-wrap .feature-posts-content .feature-posts-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.post .feature-posts-content .cat-links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.post .feature-posts-content .entry-meta a,
+#primary .entry-meta,
+.highlight-post-slider .post .entry-meta a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+#primary article .entry-title {
+  font-family: 'Jost', serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.highlight-post-slider .post .entry-content .entry-title {
+  font-family: 'Jost', serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.highlight-post-slider .post .cat-links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.sidebar .widget .widget-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-family: 'Jost', serif;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.site-footer .site-info,
+.site-footer .footer-menu ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px,
+  text-transform: none,
+  line-height: 1.6,
+}
+
+.header-cart,
+.header-my-account,
+.header-wishlist,
+.header-compare {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.header-cart a,
+.header-my-account a,
+.header-wishlist a,
+.header-compare a {
+  color: #484848;
+  font-size: 20px;
+  line-height: 26px;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .header-cart,
+.header-my-account,
+.header-wishlist,
+.header-compare {
+    padding-right: 10px;
+  }
+  .header-cart a,
+.header-my-account a,
+.header-wishlist a,
+.header-compare a {
+    font-size: 15px;
+  }
+}
+
+.header-right > div:last-child {
+  padding-right: 0;
+}
+
+.header-right .header-svg-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.header-right .header-svg-icon svg path {
+  fill: #383838;
+}
+
+.header-four select {
+  padding: 0 10px;
+}
+
+.header-four .main-navigation ul.menu > li > a {
+  padding-bottom: 17px;
+  padding-top: 17px;
+}
+
+.header-cart a.cart-icon {
+  position: relative;
+  text-align: center;
+  color: #252424;
+  border-radius: 5px;
+  display: block;
+}
+
+.header-cart a.cart-icon span.count {
+  font-size: 10px;
+  padding: 0px;
+  color: #ffffff;
+  background-color: #EB5A3E;
+  border-radius: 15px;
+  line-height: 18px;
+  margin: 0;
+  position: absolute;
+  top: -5px;
+  left: 13px;
+  height: 17px;
+  min-width: 17px;
+  text-align: center;
+}
+
+.header-cart a.cart-icon i {
+  position: relative;
+}
+
+.header-cart .widget_shopping_cart .buttons a {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 13px;
+  padding: 8px 15px;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  -moz-transition: background-color 0.4s, color 0.4s;
+  -ms-transition: background-color 0.4s, color 0.4s;
+  -o-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.header-cart .widget_shopping_cart .buttons a:hover, .header-cart .widget_shopping_cart .buttons a:focus, .header-cart .widget_shopping_cart .buttons a:active {
+  color: #ffffff;
+}
+
+.header-cart .woocommerce .widget_shopping_cart .cart_list li,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-cart .woocommerce .widget_shopping_cart .cart_list li:first-child,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li:first-child {
+  padding-top: 0;
+}
+
+.header-cart .woocommerce .widget_shopping_cart .cart_list li a,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-cart .woocommerce .widget_shopping_cart .cart_list li .remove_from_cart_button,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li .remove_from_cart_button {
+  font-size: 18px;
+}
+
+.header-cart .woocommerce .widget_shopping_cart .cart_list li .quantity, .header-cart .woocommerce .widget_shopping_cart .cart_list li .amount,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li .quantity,
+.header-cart .woocommerce.widget_shopping_cart .cart_list li .amount {
+  font-size: 12px;
+}
+
+.header-cart-block ul.site-header-cart {
+  opacity: 0;
+  display: none;
+  position: relative;
+  position: absolute;
+  z-index: 99999;
+}
+
+.header-cart-block ul.site-header-cart .widget {
+  margin-bottom: 0;
+}
+
+.header-cart-block ul.site-header-cart .woocommerce-mini-cart__empty-message {
+  margin-bottom: 0;
+}
+
+.header-cart-block .woocommerce-mini-cart__buttons.buttons {
+  margin-bottom: 0;
+}
+
+.header-cart-block:hover ul.site-header-cart, .header-cart-block:focus ul.site-header-cart, .header-cart-block:active ul.site-header-cart {
+  right: 0px;
+  top: 100%;
+  display: block !important;
+  opacity: 1;
+  right: 0;
+  min-width: 320px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  z-index: 999999;
+  animation: showup 0.5s;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.amount-cart {
+  color: #383838;
+  font-weight: 600;
+  position: relative;
+  font-size: 13px;
+  margin-left: 6px;
+  bottom: 1px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.site-header .woocommerce ul.cart_list li img,
+.site-header .woocommerce ul.product_list_widget li img {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.header-four .mid-header {
+  z-index: 10;
+}
+
+.header-four .mid-header .container {
+  position: relative;
+  z-index: 99;
+}
+
+@media screen and (max-width: 767px) {
+  .header-four .site-branding {
+    text-align: center;
+  }
+  .header-four .site-branding > a {
+    margin: auto;
+  }
+}
+
+.header-four .header-navigation > div {
+  display: block;
+}
+
+.header-four .header-search-form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header-four .header-search-form form {
+  background-color: #F8F8F8;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-right: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-four .header-search-form form {
+    margin-bottom: 20px;
+  }
+}
+
+.woocommerce .header-four select {
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+}
+
+.header-search-form input.header-search-input {
+  width: 63%;
+  display: inline-block;
+  border: none;
+  float: right;
+  height: 48px;
+  border-radius: 0;
+  right: 0;
+  position: relative;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .header-search-form input.header-search-input {
+    font-size: 13px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-search-form input.header-search-input {
+    padding-left: 10px;
+  }
+}
+
+select.header-search-select {
+  width: 35%;
+  display: inline-block;
+  border: none;
+  float: left;
+  height: 48px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  select.header-search-select {
+    font-size: 13px;
+    width: 50%;
+  }
+}
+
+button.header-search-button {
+  background-color: transparent;
+  color: #333333;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 0;
+  padding: 0 12px;
+  font-size: 16px;
+  line-height: 48px;
+  top: 0;
+  height: 48px;
+  border-radius: 0;
+  width: 46px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+
+.header-right a {
+  display: block;
+}
+
+.header-right .header-compare a:hover .info-tooltip,
+.header-right .header-compare a:focus .info-tooltip,
+.header-right .header-wishlist a:hover .info-tooltip,
+.header-right .header-wishlist a:focus .info-tooltip,
+.header-right .header-my-account a:hover .info-tooltip,
+.header-right .header-my-account a:focus .info-tooltip,
+.header-right .header-cart a:hover .info-tooltip,
+.header-right .header-cart a:focus .info-tooltip {
+  top: -28px;
+  visibility: visible;
+}
+
+.info-tooltip {
+  line-height: 1.4;
+}
