@@ -211,7 +211,7 @@ if ( ! class_exists( 'Brook_Woo' ) ) {
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </h2>
 			<?php
-			if ( !function_exists( 'isset_column' )) {
+			if ( ! function_exists( 'isset_column' ) ) {
 
 				function isset_column( $meta_data, $column_name ) {
 					$meta = '';
