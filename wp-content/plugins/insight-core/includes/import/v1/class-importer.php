@@ -19,7 +19,7 @@ require_once( ABSPATH . 'wp-admin/includes/import.php' );
 if ( ! class_exists( 'WP_Importer' ) ) {
 	$class_wp_importer = ABSPATH . 'wp-admin/includes/class-wp-importer.php';
 	if ( file_exists( $class_wp_importer ) ) {
-		require_once( $class_wp_importer );
+		require_once $class_wp_importer;
 	}
 }
 
@@ -44,29 +44,29 @@ if ( class_exists( 'WP_Importer' ) ) {
 
 		// information to import from WXR file
 		public $version;
-		public $authors = array();
-		public $posts = array();
-		public $terms = array();
+		public $authors    = array();
+		public $posts      = array();
+		public $terms      = array();
 		public $categories = array();
-		public $tags = array();
-		public $base_url = '';
+		public $tags       = array();
+		public $base_url   = '';
 
 		// mappings from old information to new
-		public $processed_authors = array();
-		public $author_mapping = array();
-		public $processed_terms = array();
-		public $processed_posts = array();
-		public $post_orphans = array();
+		public $processed_authors    = array();
+		public $author_mapping       = array();
+		public $processed_terms      = array();
+		public $processed_posts      = array();
+		public $post_orphans         = array();
 		public $processed_menu_items = array();
-		public $menu_item_orphans = array();
-		public $missing_menu_items = array();
+		public $menu_item_orphans    = array();
+		public $missing_menu_items   = array();
 
 		public $fetch_attachments = true;
-		public $url_remap = array();
-		public $featured_images = array();
+		public $url_remap         = array();
+		public $featured_images   = array();
 
-		public $demo = '';
-		public $imageCount = 0;
+		public $demo        = '';
+		public $imageCount  = 0;
 		public $totalImages = 0;
 		public $generate_thumb;
 		public $importFullDemo;
@@ -756,7 +756,6 @@ if ( class_exists( 'WP_Importer' ) ) {
 		/**
 		 * Import WooCommerce Attributes
 		 * Clone from function post_importer_compatibility() in /woocommerce/includes/admin/class-wc-admin-importer.php file
-		 *
 		 */
 		function import_woocommerce_attributes() {
 			global $wpdb;
@@ -771,6 +770,8 @@ if ( class_exists( 'WP_Importer' ) ) {
 			}
 
 			$import_data = $this->parse( $file );
+
+			$attribute_datas = $this->get_data( 'woocommerce_attributes' );
 
 			if ( isset( $import_data['posts'] ) ) {
 				$posts = $import_data['posts'];
@@ -794,6 +795,17 @@ if ( class_exists( 'WP_Importer' ) ) {
 													'attribute_orderby' => 'menu_order',
 													'attribute_public'  => 0,
 												);
+
+												if ( ! empty( $attribute_datas ) && ! empty( $attribute_datas[ $attribute_name ] ) ) {
+													$current_attribute = $attribute_datas[ $attribute_name ];
+
+													$attribute = wp_parse_args( [
+														'attribute_label'   => $current_attribute['attribute_label'],
+														'attribute_type'    => $current_attribute['attribute_type'],
+														'attribute_orderby' => $current_attribute['attribute_orderby'],
+													], $attribute );
+												}
+
 												$wpdb->insert( $wpdb->prefix . 'woocommerce_attribute_taxonomies', $attribute );
 												delete_transient( 'wc_attribute_taxonomies' );
 											}
@@ -845,7 +857,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 						}
 
 						$templine .= $line;
-						if ( substr( trim( $line ), - 1, 1 ) == ';' ) {
+						if ( substr( trim( $line ), -1, 1 ) == ';' ) {
 							ob_start();
 							$wpdb->query( str_replace( array(
 								'%INSIGHT_CORE_SITE_URI%',
@@ -1138,7 +1150,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 
 			$this->import_rev_sliders();
 
-			InsightCore::update_option_count( INSIGHT_CORE_THEME_SLUG . '_' . $this->demo . '_imported', $this->demo );
+			InsightCore::update_option_count( INSIGHT_CORE_THEME_SLUG . '_' . $this->demo . '_imported' );
 		}
 
 		/**
@@ -1362,7 +1374,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 					<?php endif; ?>
 					<ol id="authors">
 						<?php foreach ( $this->authors as $author ) : ?>
-							<li><?php $this->author_select( $j ++, $author ); ?></li>
+							<li><?php $this->author_select( $j++, $author ); ?></li>
 						<?php endforeach; ?>
 					</ol>
 				<?php endif; ?>
@@ -1386,7 +1398,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 		 * Display import options for an individual author. That is, either create
 		 * a new user based on import info or map to an existing user
 		 *
-		 * @param int $n Index for each author in the form
+		 * @param int   $n      Index for each author in the form
 		 * @param array $author Author information, e.g. login, display name, email
 		 */
 		function author_select( $n, $author ) {
@@ -1727,7 +1739,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 					$postdata = wp_slash( $postdata );
 
 					if ( 'attachment' == $postdata['post_type'] ) {
-						$this->totalImages ++;
+						$this->totalImages++;
 					}
 				}
 			}
@@ -1939,7 +1951,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 								add_comment_meta( $inserted_comments[ $key ], $meta['key'], $value );
 							}
 
-							$num_comments ++;
+							$num_comments++;
 						}
 					}
 					unset( $newcomments, $inserted_comments, $post['comments'] );
@@ -2094,14 +2106,14 @@ if ( class_exists( 'WP_Importer' ) ) {
 		/**
 		 * If fetching attachments is enabled then attempt to create a new attachment
 		 *
-		 * @param array $post Attachment post details from WXR
-		 * @param string $url URL to fetch attachment from
+		 * @param array  $post Attachment post details from WXR
+		 * @param string $url  URL to fetch attachment from
 		 *
 		 * @return int|WP_Error Post ID on success, WP_Error otherwise
 		 */
 		function process_attachment( $post, $url ) {
 
-			$this->imageCount ++;
+			$this->imageCount++;
 
 			$guidraw = explode( 'wp-content', $post['guid'] ); // file name
 			if ( ! empty( $guidraw[1] ) ) {
@@ -2186,8 +2198,8 @@ if ( class_exists( 'WP_Importer' ) ) {
 		/**
 		 * Attempt to download a remote file attachment
 		 *
-		 * @param string $url URL of item to fetch
-		 * @param array $post Attachment details
+		 * @param string $url  URL of item to fetch
+		 * @param array  $post Attachment details
 		 *
 		 * @return array|WP_Error Local file location details on success, WP_Error otherwise
 		 */

@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WPBakery Page Builder Clipboard
  * Description: Clipboard and template manager for WPBakery Page Builder
- * Version: 5.0.1
+ * Version: 5.0.2
  * Author: bitorbit
  * Author URI: http://codecanyon.net/user/bitorbit
  */

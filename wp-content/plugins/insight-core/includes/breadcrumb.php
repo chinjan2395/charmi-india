@@ -160,9 +160,10 @@ class InsightCore_Breadcrumb {
 				'link'  => false,
 			);
 		} elseif ( is_tax() ) {
-			$taxonomy = get_query_var( 'taxonomy' );
-			$term     = get_term_by( 'slug', get_query_var( 'term' ), $taxonomy );
-			if ( is_taxonomy_hierarchical( $taxonomy ) && $term->parent != 0 ) {
+			$taxonomy  = get_query_var( 'taxonomy' );
+			$term_slug = get_queried_object()->slug;
+			$term      = get_term_by( 'slug', $term_slug, $taxonomy );
+			if ( is_taxonomy_hierarchical( $taxonomy ) && $term && $term->parent != 0 ) {
 				$ancestors = array_reverse( get_ancestors( $term->term_id, $taxonomy ) );
 				foreach ( $ancestors as $ancestor_id ) {
 					$ancestor = get_term( $ancestor_id, $taxonomy );

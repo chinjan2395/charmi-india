@@ -12,6 +12,9 @@ class InsightCore_Import {
 
 	private $response = array();
 	private $process  = array();
+	/**
+	 * @var InsightCore_Importer_2 $importer
+	 */
 	private $importer;
 	private $file_path;
 	private $_cpath;
@@ -154,12 +157,10 @@ class InsightCore_Import {
 
 			if ( $this->need_process( 'media' ) ) {
 				if ( ! $this->importer->check_writeable() ) {
-					$this->send_fail_msg( wp_kses( __( 'Could not write files into directory: <strong>%swp-content</strong>', 'insight-core' ),
-						array(
-							'strong' => array(),
-						)
-					),
-						str_replace( '\\', '/', ABSPATH ) );
+					$this->send_fail_msg( wp_kses(
+						sprintf( __( 'Could not write files into directory: <strong>%swp-content</strong>', 'insight-core' ), str_replace( '\\', '/', ABSPATH ) ), [
+						'strong' => array(),
+					] ) );
 				}
 
 				$_tmppath = $this->_cpath . INSIGHT_CORE_THEME_SLUG . '-' . $this->dummy . '_tmp';
@@ -211,7 +212,7 @@ class InsightCore_Import {
 				$this->importer->import_rev_sliders();
 			}
 
-			InsightCore::update_option_count( INSIGHT_CORE_THEME_SLUG . '_' . $this->dummy . '_imported', $this->dummy );
+			InsightCore::update_option_count( INSIGHT_CORE_THEME_SLUG . '_' . $this->dummy . '_imported' );
 
 			$this->send_success_msg( esc_html__( 'Import is successful!', 'insight-core' ) );
 
@@ -220,7 +221,6 @@ class InsightCore_Import {
 		}
 
 		$this->send_response();
-
 	}
 
 	private function need_process( $process ) {
@@ -251,7 +251,7 @@ class InsightCore_Import {
 			$this->importer->import( $file );
 
 		} catch ( Exception $ex ) {
-			$this->_send_fail_msg( esc_html__( 'Error while importing', 'insight-core' ) );
+			$this->send_fail_msg( esc_html__( 'Error while importing', 'insight-core' ) );
 
 			if ( WP_DEBUG || ( isset( $_GET['debug'] ) && $_GET['debug'] == 'true' ) ) {
 				var_dump( $ex );

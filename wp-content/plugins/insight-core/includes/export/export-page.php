@@ -92,11 +92,37 @@
 					<?php if ( class_exists( 'WooCommerce' ) ) { ?>
 						<tr valign="middle">
 							<td>
-								WooCommerce
+								WooCommerce Images Sizes
 							</td>
 							<td>
 								<form method="post" action="">
-									<input type="hidden" name="export_option" value="woocommerce"/>
+									<input type="hidden" name="export_option" value="woocommerce_image_sizes"/>
+									<input type="submit" value="<?php echo esc_html__( 'Export', 'insight-core' ); ?>"
+									       name="export"
+									       class="btn"/>
+								</form>
+							</td>
+						</tr>
+						<tr valign="middle">
+							<td>
+								WooCommerce Settings
+							</td>
+							<td>
+								<form method="post" action="">
+									<input type="hidden" name="export_option" value="woocommerce_settings"/>
+									<input type="submit" value="<?php echo esc_html__( 'Export', 'insight-core' ); ?>"
+									       name="export"
+									       class="btn"/>
+								</form>
+							</td>
+						</tr>
+						<tr valign="middle">
+							<td>
+								WooCommerce Attributes
+							</td>
+							<td>
+								<form method="post" action="">
+									<input type="hidden" name="export_option" value="woocommerce_attributes"/>
 									<input type="submit" value="<?php echo esc_html__( 'Export', 'insight-core' ); ?>"
 									       name="export"
 									       class="btn"/>

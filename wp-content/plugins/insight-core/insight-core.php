@@ -3,7 +3,7 @@
 Plugin Name: Insight Core
 Description: Core functions for WordPress theme
 Author: ThemeMove
-Version: 2.2.4
+Version: 2.2.8
 Author URI: https://thememove.com
 Text Domain: insight-core
 Domain Path: /languages/
@@ -15,7 +15,7 @@ if ( ! empty( $theme['Template'] ) ) {
 	$theme = wp_get_theme( $theme['Template'] );
 }
 define( 'INSIGHT_CORE_FILE', __FILE__ );
-define( 'INSIGHT_CORE_VERSION', '2.2.4' );
+define( 'INSIGHT_CORE_VERSION', '2.2.8' );
 define( 'INSIGHT_CORE_SITE_URI', site_url() );
 define( 'INSIGHT_CORE_PATH', plugin_dir_url( __FILE__ ) );
 define( 'INSIGHT_CORE_DIR', dirname( __FILE__ ) );
@@ -32,6 +32,15 @@ if ( ! class_exists( 'InsightCore' ) ) {
 		public static $info;
 
 		protected static $instance = null;
+
+		/**
+		 * Kirki need loaded before theme setup
+		 * Then there is no way to disable Kirki required.
+		 * Manual assign themes to disable.
+		 */
+		const DISABLE_KIRKI_BY_THEMES = [
+			'minimog',
+		];
 
 		public static function instance() {
 			if ( null === self::$instance ) {
@@ -81,8 +90,10 @@ if ( ! class_exists( 'InsightCore' ) ) {
 			include_once( INSIGHT_CORE_INC_DIR . '/import/import.php' );
 
 			// Kirki
-			include_once( INSIGHT_CORE_DIR . '/libs/kirki/kirki.php' );
-			add_filter( 'kirki/config', array( $this, 'kirki_update_url' ) );
+			if ( ! in_array( INSIGHT_CORE_THEME_SLUG, self::DISABLE_KIRKI_BY_THEMES ) ) {
+				include_once( INSIGHT_CORE_DIR . '/libs/kirki/kirki.php' );
+				add_filter( 'kirki/config', array( $this, 'kirki_update_url' ) );
+			}
 
 			// Update
 			include_once( INSIGHT_CORE_INC_DIR . '/update/class-updater.php' );

@@ -39,9 +39,19 @@ class InsightCore_Export {
 				case 'customizer_options':
 					$this->export_customizer_options();
 					break;
-				case 'woocommerce':
+				case 'woocommerce_image_sizes':
 					if ( class_exists( 'WooCommerce' ) ) {
-						$this->export_woocommerce();
+						$this->export_woocommerce_image_sizes();
+					}
+					break;
+				case 'woocommerce_settings':
+					if ( class_exists( 'WooCommerce' ) ) {
+						$this->export_woocommerce_settings();
+					}
+					break;
+				case 'woocommerce_attributes':
+					if ( class_exists( 'WooCommerce' ) ) {
+						$this->export_woocommerce_attributes();
 					}
 					break;
 				case 'essential_grid':
@@ -112,6 +122,24 @@ class InsightCore_Export {
 		exit;
 	}
 
+	function save_as_json_file( $file_name, $output ) {
+		header( "Content-type: application/json", true, 200 );
+		header( "Content-Disposition: attachment; filename=$file_name" );
+		header( "Pragma: no-cache" );
+		header( "Expires: 0" );
+		echo $output;
+		exit;
+	}
+
+	function esc_json( $json, $html = false ) {
+		return _wp_specialchars(
+			$json,
+			$html ? ENT_NOQUOTES : ENT_QUOTES, // Escape quotes in attribute nodes only.
+			'UTF-8',                           // json_encode() outputs UTF-8 (really just ASCII), not the blog's charset.
+			true                               // Double escape entities: `&amp;` -> `&amp;amp;`.
+		);
+	}
+
 	function available_widgets() {
 		global $wp_registered_widget_controls;
 
@@ -142,6 +170,7 @@ class InsightCore_Export {
 		$args['content'] = 'all';
 
 		export_wp( $args );
+		exit();
 	}
 
 	function export_sidebars() {
@@ -275,6 +304,8 @@ class InsightCore_Export {
 			'elementor_library_category_children',
 			'elementor_experiment-e_dom_optimization',
 			'elementor_experiment-e_optimized_assets_loading',
+			'elementor_experiment-e_font_icon_svg',
+			'elementor_experiment-additional_custom_breakpoints',
 		);
 
 		$elementor_options = apply_filters( 'insight_core_export_elementor_options', $elementor_options );
@@ -413,10 +444,8 @@ class InsightCore_Export {
 		$this->save_as_txt_file( 'customizer.txt', serialize( $options ) );
 	}
 
-	function export_woocommerce() {
-
+	function export_woocommerce_image_sizes() {
 		if ( version_compare( WC_VERSION, '3.3.0', '<' ) ) {
-
 			$data = array(
 				'images' => array(
 					'catalog'   => wc_get_image_size( 'shop_catalog' ),
@@ -439,6 +468,79 @@ class InsightCore_Export {
 		$output = serialize( $data );
 
 		$this->save_as_txt_file( 'woocommerce.txt', $output );
+	}
+
+	function export_woocommerce_settings() {
+		$data = [];
+
+		$options = [
+			'woocommerce_enable_reviews',
+			'woocommerce_review_rating_verification_label',
+			'woocommerce_review_rating_verification_required',
+		];
+
+		// WPClever Tabs.
+		if ( class_exists( 'WPCleverWoost' ) ) {
+			$options[] = 'woost_tabs';
+		}
+
+		// WPClever Notifications.
+		if ( defined( 'WPCSN_VERSION' ) ) {
+			$options[] = 'wpcsn_opts';
+		}
+
+		// WPClever Compare.
+		if ( class_exists( 'WPCleverWoosc' ) ) {
+			$compare_options = $this->get_options_by_name_like( 'woosc_' );
+			$compare_options = apply_filters( 'insight_core_export_wpclever_compare_options', $compare_options );
+
+			$options = array_merge( $options, $compare_options );
+		}
+
+		// Sales Countdown Timer Pro.
+		if ( class_exists( 'VI_SCT_SALES_COUNTDOWN_TIMER_Data' ) ) {
+			$sale_countdown_options = [
+				'sales_countdown_timer_params',
+			];
+			$sale_countdown_options = apply_filters( 'insight_core_export_sales_countdown_timer_options', $sale_countdown_options );
+
+			$options = array_merge( $options, $sale_countdown_options );
+		}
+
+		$woocommerce_options = apply_filters( 'insight_core_export_woocommerce_options', $options );
+
+		if ( ! empty( $woocommerce_options ) ) {
+			foreach ( $woocommerce_options as $option ) {
+				$setting = get_option( $option );
+
+				if ( $setting ) {
+					$data[ $option ] = $setting;
+				}
+			}
+		}
+
+		$output = wp_json_encode( $data );
+
+		//$this->save_as_txt_file( 'woocommerce.txt', $output );
+		$this->save_as_json_file( 'woocommerce_options.json', $output );
+	}
+
+	function export_woocommerce_attributes() {
+		global $wpdb;
+
+		$sql = "SELECT * FROM {$wpdb->prefix}woocommerce_attribute_taxonomies";
+
+		$attributes = $wpdb->get_results( $sql );
+		$results    = [];
+		if ( ! empty( $attributes ) ) {
+			foreach ( $attributes as $attribute ) {
+				$results[ $attribute->attribute_name ] = (array) $attribute;
+			}
+		}
+
+		$output = serialize( $results );
+
+		$this->save_as_txt_file( 'woocommerce_attributes.txt', $output );
 	}
 
 	function export_essential_grid() {
@@ -684,6 +786,24 @@ class InsightCore_Export {
 			closedir( $dir );
 		}
 
+	}
+
+	public function get_options_by_name_like( $name ) {
+		global $wpdb;
+
+		$sql = $wpdb->prepare( "SELECT * FROM $wpdb->options WHERE option_name LIKE %s;", '%' . $wpdb->esc_like( $name ) . '%' );
+
+		$results = $wpdb->get_results( $sql );
+
+		$data = [];
+
+		if ( ! empty( $results ) ) {
+			foreach ( $results as $option ) {
+				$data[] = $option->option_name;
+			}
+		}
+
+		return $data;
 	}
 }
 

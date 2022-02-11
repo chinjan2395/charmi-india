@@ -382,7 +382,7 @@ class InsightCore_Importer_2 extends WP_Importer {
 	}
 
 	/**
-	 * Read export files
+	 * Read export txt file
 	 *
 	 * @param $type
 	 *
@@ -403,6 +403,29 @@ class InsightCore_Importer_2 extends WP_Importer {
 		$file_content = $wp_filesystem->get_contents( $file );
 
 		return $unserialize ? @unserialize( $file_content ) : $file_content;
+	}
+
+	/**
+	 * Read export json file
+	 *
+	 * @param $file_name
+	 *
+	 * @return mixed
+	 */
+	function get_json_data( $file_name ) {
+		$file = INSIGHT_CORE_THEME_DIR . INSIGHT_CORE_DS . 'assets' . INSIGHT_CORE_DS . 'import' . INSIGHT_CORE_DS . $this->demo . INSIGHT_CORE_DS . $file_name . '.json';
+
+		if ( ! file_exists( $file ) ) {
+			return '';
+		}
+
+		require_once( ABSPATH . 'wp-admin/includes/file.php' );
+		WP_Filesystem();
+		global $wp_filesystem;
+
+		$file_content = $wp_filesystem->get_contents( $file );
+
+		return json_decode( $file_content, true );
 	}
 
 	/**
@@ -903,6 +926,8 @@ class InsightCore_Importer_2 extends WP_Importer {
 			return $reader;
 		}
 
+		$attribute_datas = $this->get_data( 'woocommerce_attributes' );
+
 		while ( $reader->read() ) {
 			// Only deal with element opens
 			if ( $reader->nodeType !== XMLReader::ELEMENT ) {
@@ -938,6 +963,17 @@ class InsightCore_Importer_2 extends WP_Importer {
 										'attribute_orderby' => 'menu_order',
 										'attribute_public'  => 0,
 									);
+
+									if ( ! empty( $attribute_datas ) && ! empty( $attribute_datas[ $attribute_name ] ) ) {
+										$current_attribute = $attribute_datas[ $attribute_name ];
+
+										$attribute = wp_parse_args( [
+											'attribute_label'   => $current_attribute['attribute_label'],
+											'attribute_type'    => $current_attribute['attribute_type'],
+											'attribute_orderby' => $current_attribute['attribute_orderby'],
+										], $attribute );
+									}
+
 									$wpdb->insert( $wpdb->prefix . 'woocommerce_attribute_taxonomies', $attribute );
 									delete_transient( 'wc_attribute_taxonomies' );
 								}
@@ -963,7 +999,6 @@ class InsightCore_Importer_2 extends WP_Importer {
 	 * @return array
 	 */
 	function import_woocommerce_image_sizes() {
-
 		if ( ! class_exists( 'WooCommerce' ) ) {
 			return;
 		}
@@ -1016,13 +1051,26 @@ class InsightCore_Importer_2 extends WP_Importer {
 
 	}
 
+	function import_woocommerce_options() {
+		if ( ! class_exists( 'WooCommerce' ) ) {
+			return;
+		}
+
+		$woocommerce_options = $this->get_json_data( 'woocommerce_options' );
+
+		if ( is_array( $woocommerce_options ) && ! empty( $woocommerce_options ) ) {
+			foreach ( $woocommerce_options as $option_name => $value ) {
+				update_option( $option_name, $value );
+			}
+		}
+	}
+
 	/**
 	 * Import WooCommerce pages
 	 *
 	 * @return array
 	 */
 	function import_woocommerce_pages() {
-
 		if ( ! class_exists( 'WooCommerce' ) ) {
 			return;
 		}
@@ -1114,6 +1162,50 @@ class InsightCore_Importer_2 extends WP_Importer {
 			}
 		}
 		InsightCore::update_option_count( 'insight_core_import_revsliders' );
+	}
+
+	/**
+	 * @see WPForms\Admin\Tools\Views\Import::process()
+	 */
+	function import_wpforms() {
+		if ( ! defined( 'WPFORMS_VERSION' ) ) {
+			return;
+		}
+
+		$forms = $this->get_json_data( 'wpforms' );
+
+		if ( empty( $forms ) || ! is_array( $forms ) ) {
+			return;
+		}
+
+		foreach ( $forms as $form ) {
+			$title = ! empty( $form['settings']['form_title'] ) ? $form['settings']['form_title'] : '';
+			$desc  = ! empty( $form['settings']['form_desc'] ) ? $form['settings']['form_desc'] : '';
+
+			$post_args = [
+				'post_title'   => $title,
+				'post_status'  => 'publish',
+				'post_type'    => 'wpforms',
+				'post_excerpt' => $desc,
+			];
+
+			if ( ! empty( $form['id'] ) ) {
+				$post_args['import_id'] = $form['id'];
+			}
+
+			$new_id = wp_insert_post( $post_args );
+
+			if ( $new_id ) {
+				$form['id'] = $new_id;
+
+				wp_update_post(
+					[
+						'ID'           => $new_id,
+						'post_content' => wpforms_encode( $form ),
+					]
+				);
+			}
+		}
 	}
 
 	/**
@@ -1360,6 +1452,7 @@ class InsightCore_Importer_2 extends WP_Importer {
 
 		$this->set_user_mapping();
 
+		$this->import_woocommerce_options();
 		$this->import_woocommerce_image_sizes();
 
 		/**
@@ -1392,6 +1485,8 @@ class InsightCore_Importer_2 extends WP_Importer {
 		$this->fix_essential_grid();
 
 		$this->import_rev_sliders();
+
+		$this->import_wpforms();
 
 		do_action( 'insight_core_importer_dispatch_after', $this );
 
@@ -2422,7 +2517,7 @@ class InsightCore_Importer_2 extends WP_Importer {
 		$_urlxz = explode( 'wp-content', $remote_url );
 
 		// remove multisites sites/xx folder from file.
-		$remote_file_name = preg_replace( '~sites/[0-9]/~', '', $_urlxz[1] );
+		$remote_file_name = preg_replace( '~sites/[0-9]*/~', '', $_urlxz[1] );
 
 		$_urlxc = WP_CONTENT_DIR . $remote_file_name;
 
