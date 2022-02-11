@@ -1,0 +1,186 @@
+.comment-nav-links,
+.page-pagination {
+	padding: 0;
+	margin: -5px;
+	font-size: 14px;
+	font-weight: 500;
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+		padding: 5px;
+
+		span,
+		a {
+			padding: 0 5px;
+			display: block;
+			text-align: center;
+			line-height: 39px;
+			min-width: 41px;
+			height: 41px;
+			border: 1px solid #eee;
+			background: #fff;
+		}
+
+		a:hover,
+		a:focus,
+		.current {
+			color: #fff;
+			border-color: transparent;
+		}
+
+		.dots {
+			background: none;
+			border: 0;
+			min-width: 20px;
+		}
+	}
+}
+
+.comment-nav-links {
+	ul {
+		padding: 0;
+	}
+}
+
+#comment-nav-above {
+	ul {
+		margin: 50px 0;
+	}
+}
+
+#comment-nav-below {
+	ul {
+		margin: 0 0 74px;
+	}
+}
+
+.page-links {
+	@extend %clearfix;
+	clear: both;
+	padding-top: 30px;
+	margin: 0 -6px;
+
+	> span,
+	> a {
+		display: block;
+		float: left;
+		padding: 0 6px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 38px;
+	}
+
+	> span {
+		padding: 0 12px;
+	}
+
+	a {
+		span {
+			padding: 0 6px;
+		}
+	}
+
+	> a:hover,
+	> a:focus,
+	> span {
+		color: #fff;
+	}
+}
+
+.post-navigation {
+	position: relative;
+}
+
+.nav-links {
+	margin-top: 47px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+
+	.nav-item {
+		max-width: 48%;
+		width: 360px;
+	}
+
+	a {
+		display: block;
+		padding: 47px 30px 57px;
+		height: 100%;
+		border: 1px solid #eee;
+		background: #fff;
+		font-size: 24px;
+		line-height: 1.375;
+		font-weight: 600;
+		color: #222;
+		word-wrap: break-word;
+
+		div {
+			transition: none;
+			position: relative;
+			font-size: 14px;
+			font-weight: 500;
+			color: #999;
+			margin-bottom: 28px;
+
+			span {
+				position: absolute;
+				top: -3px;
+				font-size: 24px;
+				color: #222;
+			}
+		}
+
+		&:hover {
+			border-color: transparent;
+			color: #fff;
+
+			div {
+				color: #fff;
+
+				span {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.previous {
+		text-align: left;
+
+		a {
+			padding-left: 90px;
+		}
+
+		div span {
+			left: -61px;
+		}
+	}
+
+	.next {
+		text-align: right;
+
+		a {
+			padding-right: 90px;
+		}
+
+		div span {
+			right: -61px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.nav-links {
+		.nav-item {
+			width: 100%;
+			max-width: 100%;
+
+			+ .nav-item {
+				margin-top: 30px;
+			}
+		}
+	}
+}

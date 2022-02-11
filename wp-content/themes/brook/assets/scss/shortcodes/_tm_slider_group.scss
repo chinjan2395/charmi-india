@@ -1,0 +1,28 @@
+.tm-slider-group {
+	.tm-box-icon {
+		margin-bottom: 0;
+	}
+
+	&.swiper-has-shadow {
+		margin: -15px;
+
+		.swiper-slide-inner {
+			padding: 15px;
+		}
+	}
+
+	&.style-separator {
+
+		.swiper-container {
+			padding-left: 1px;
+		}
+
+		.tm-group {
+			padding: 100px 57px;
+			border-left: 1px solid rgba(153, 153, 153, .1);
+			border-right: 1px solid rgba(153, 153, 153, .1);
+			margin-left: -1px;
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+.rtl {
+	input[type="url"],
+	input[type="email"],
+	input[type="tel"] {
+		direction: ltr;
+		text-align: right;
+	}
+
+	form.wpcf7-form {
+		direction: rtl;
+	}
+}

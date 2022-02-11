@@ -1,0 +1,63 @@
+.tm-icon {
+	.icon {
+		position: relative;
+	}
+
+	.tm-svg {
+		display: inline-block;
+		line-height: 0;
+
+		* {
+			stroke: currentColor;
+		}
+	}
+
+	&.style-01 {
+		line-height: 0;
+
+		.icon {
+			font-size: 90px;
+		}
+
+		.tm-svg {
+			width: 90px;
+		}
+	}
+
+	&.style-02 {
+		line-height: 0;
+
+		.icon {
+			font-size: 80px;
+			width: 160px;
+			height: 160px;
+			display: inline-block;
+			border-radius: 50%;
+			color: #fff;
+		}
+
+		.tm-svg {
+			width: 80px;
+		}
+
+		.tm-svg,
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-icon {
+		&.style-02 {
+			.icon {
+				font-size: 50px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,374 @@
+form.submitting {
+	.wpcf7-spinner {
+		display: block;
+	}
+}
+
+.wpcf7 {
+	.wpcf7-spinner {
+		display: none;
+		margin: 30px auto 0;
+	}
+
+	.wpcf7-response-output {
+		margin: 30px 0 0 !important;
+		padding: 15px 20px !important;
+		border: 0 !important;
+		color: #fff;
+		background: #2196f3;
+	}
+
+	form.sent {
+		.wpcf7-response-output {
+			background: #5cb85c;
+		}
+	}
+
+	form.failed,
+	form.aborted {
+		.wpcf7-response-output {
+			background: #d9534f;
+		}
+	}
+
+	form.spam {
+		.wpcf7-response-output {
+			background: #cf7b50;
+		}
+	}
+
+	form.invalid,
+	form.unaccepted,
+	form.payment-required {
+		.wpcf7-response-output {
+			background: #f0ad4e;
+		}
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 5px;
+		color: #d9534f;
+		font-size: 12px;
+	}
+}
+
+.tm-contact-form-7 {
+	.wpcf7-form {
+		br {
+			display: none;
+		}
+	}
+
+	.form-item {
+		position: relative;
+
+		&.has-icon {
+			.wpcf7-text,
+			.wpcf7-date {
+				padding-right: 40px;
+			}
+		}
+	}
+
+	.form-icon {
+		font-size: 18px;
+		color: #ccc;
+		position: absolute;
+		top: 14px;
+		right: 17px;
+		line-height: 0;
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.wpcf7-textarea {
+		height: 150px;
+	}
+
+	.ajax-loader {
+		display: none !important;
+	}
+
+	.wpcf7-submit {
+		display: block;
+		margin: 47px auto 0;
+	}
+
+	&.style-02 {
+		.wpcf7-submit {
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	&.style-03 {
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='date'],
+		select,
+		textarea {
+			border: 0;
+			border-bottom: 2px solid #ddd;
+			background: none;
+			padding-left: 0;
+			padding-right: 0;
+			height: 50px;
+
+			&:focus {
+				color: #222;
+			}
+		}
+
+		textarea {
+			height: 120px;
+		}
+
+		.form-left-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-left: 35px;
+			}
+		}
+
+		.form-left-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-right: 35px;
+			}
+		}
+
+		.form-icon {
+			left: 0;
+			right: auto;
+			top: 24px;
+			z-index: 2;
+			font-size: 20px;
+			color: #888;
+		}
+
+		.wpcf7-form-control-wrap {
+			position: relative;
+			margin-bottom: 30px;
+			z-index: 1;
+
+			&:hover {
+				&:after {
+					width: 100%;
+					left: 0;
+					right: auto;
+				}
+			}
+
+			&:after {
+				content: '';
+				width: 0;
+				height: 2px;
+				bottom: 0;
+				position: absolute;
+				left: auto;
+				right: 0;
+				transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+			}
+		}
+
+		.form-actions {
+			display: flex;
+			margin-top: 19px;
+		}
+
+		.form-description {
+			flex-grow: 1;
+			line-height: 1.63;
+			margin-right: 110px;
+		}
+
+		.form-submit {
+			flex-shrink: 0;
+		}
+
+		.wpcf7-submit {
+			margin: 0;
+		}
+	}
+
+	&.style-04 {
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='date'],
+		select,
+		textarea {
+			border: 0;
+			border-bottom: 2px solid #eee;
+			background: none;
+			padding-left: 0;
+			padding-right: 0;
+			height: 50px;
+
+			&:focus {
+				color: #222;
+			}
+		}
+
+		textarea {
+			height: 120px;
+		}
+
+		.form-left-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-left: 35px;
+			}
+		}
+
+		.form-left-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-right: 35px;
+			}
+		}
+
+		.form-icon {
+			left: 0;
+			right: auto;
+			top: 24px;
+			z-index: 2;
+			font-size: 20px;
+			color: #888;
+		}
+
+		.wpcf7-form-control-wrap {
+			position: relative;
+			margin-bottom: 30px;
+			z-index: 1;
+
+			&:hover {
+				&:after {
+					width: 100%;
+					left: 0;
+					right: auto;
+				}
+			}
+
+			&:after {
+				content: '';
+				width: 0;
+				height: 2px;
+				bottom: 0;
+				position: absolute;
+				left: auto;
+				right: 0;
+				transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+			}
+		}
+
+		.form-actions {
+			display: flex;
+			margin-top: 19px;
+		}
+
+		.form-description {
+			flex-grow: 1;
+			line-height: 1.63;
+			margin-right: 110px;
+		}
+
+		.form-submit {
+			flex-shrink: 0;
+			text-align: right;
+		}
+
+		.wpcf7-submit {
+			display: inline-block;
+			margin: 0;
+			border-radius: 0;
+		}
+	}
+
+	&.style-05 {
+		.wpcf7-form-control-wrap {
+			margin-bottom: 20px;
+		}
+
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='date'],
+		select,
+		textarea {
+			border: 1px solid #f5f6fa;
+			background: #f5f6fa;
+			height: 50px;
+
+			&:focus {
+				color: #222;
+			}
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		.wpcf7-submit {
+			width: 100%;
+			margin: 0;
+			border-radius: 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-contact-form-7 {
+		&.style-03 {
+			.form-actions {
+				display: block;
+				margin-top: 0;
+			}
+
+			.form-description {
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.tm-contact-form-7 {
+		&.style-04 {
+			.row {
+				margin-left: -18px;
+				margin-right: -18px;
+			}
+
+			[class*='col-'] {
+				padding-left: 18px;
+				padding-right: 18px;
+			}
+
+			.wpcf7-form-control-wrap {
+				margin-bottom: 55px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-contact-form-7 {
+		&.style-04 {
+			.form-submit {
+				margin-top: 50px;
+				text-align: left;
+			}
+		}
+	}
+}
+

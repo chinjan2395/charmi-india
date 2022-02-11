@@ -1,0 +1,20 @@
+.vc_chart.vc_chart {
+	.vc_chart-legend {
+		li {
+			margin: 0;
+			font-size: 15px;
+			font-weight: 500;
+
+			+ li {
+				margin-top: 18px;
+			}
+		}
+
+		span {
+			border-radius: 3px;
+			width: 26px;
+			height: 26px;
+			margin-right: 28px;
+		}
+	}
+}

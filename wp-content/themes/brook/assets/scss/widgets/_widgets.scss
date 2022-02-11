@@ -1,0 +1,211 @@
+.page-content {
+	.widget-title,
+	.widgettitle {
+		font-size: 18px;
+		margin-bottom: 20px;
+		padding-bottom: 11px;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+.page-sidebar {
+	.page-sidebar-inner {
+		height: 100%;
+	}
+
+	.page-sidebar-content {
+		border: 1px solid #eee;
+		padding: 50px 29px 66px;
+		background: #fff;
+	}
+
+	&.wpb_widgetised_column {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.page-sidebar {
+		&.wpb_widgetised_column {
+			&.page-sidebar-left {
+				padding-right: 20px;
+				padding-left: 0;
+			}
+
+			&.page-sidebar-right {
+				padding-left: 20px;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.page-content {
+	.widget {
+		+ .widget {
+			margin: 52px 0 0;
+		}
+	}
+}
+
+.page-sidebar-special {
+	margin-top: 60px;
+}
+
+.insight-core-bmw,
+.widget_nav_menu,
+.widget_pages,
+.widget_categories,
+.widget_product_categories,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_archive,
+.widget_rss,
+.widget_meta {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+}
+
+.insight-core-bmw,
+.widget_nav_menu,
+.widget_pages,
+.widget_categories,
+.widget_product_categories,
+.widget_recent_entries,
+.widget_archive,
+.widget_meta {
+	li {
+		a {
+			display: block;
+			padding: 12px 0;
+		}
+	}
+}
+
+.insight-core-bmw,
+.widget_nav_menu,
+.widget_pages,
+.widget_categories,
+.widget_product_categories {
+	ul {
+		ul {
+			a {
+				padding-left: 15px;
+			}
+
+			ul {
+				a {
+					padding-left: 30px;
+				}
+
+				ul {
+					a {
+						padding-left: 45px;
+					}
+				}
+			}
+		}
+	}
+
+	a:empty {
+		display: none;
+	}
+}
+
+.widget_recent_comments,
+.widget_rss {
+	li {
+		padding: 12px 0;
+	}
+}
+
+.widget_recent_comments {
+	.comment-author-link {
+		position: relative;
+		padding-left: 24px;
+
+		&:before {
+			@extend %FontAwesomeSolid;
+			content: '\f27a';
+			font-size: 14px;
+			line-height: 0;
+			position: absolute;
+			top: 11px;
+			left: 0;
+		}
+	}
+
+	.recentcomments {
+		a {
+			display: inline !important;
+		}
+	}
+}
+
+.widget_recent_entries {
+	.post-date {
+		position: relative;
+		display: block;
+		font-size: 15px;
+		font-weight: 500;
+		padding-left: 25px;
+		margin-top: 17px;
+
+		&:before {
+			@extend %FontAwesomeLight;
+			font-size: 16px;
+			content: '\f073';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+		}
+	}
+}
+
+.page-footer {
+	.widgettitle {
+		line-height: 1.2;
+		font-weight: 700;
+		font-size: 15px;
+		padding-bottom: 13px;
+		border-bottom: 1px solid rgba(238, 238, 238, .13);
+		margin-bottom: 30px;
+	}
+
+	.insight-core-bmw,
+	.widget_nav_menu,
+	.widget_pages,
+	.widget_categories,
+	.widget_product_categories,
+	.widget_recent_entries,
+	.widget_archive,
+	.widget_meta {
+		li {
+			a {
+				display: block;
+				padding: 6px 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.page-content {
+		.widget {
+			+ .widget {
+				margin: 40px 0 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-sidebar {
+		margin-bottom: 50px;
+	}
+}

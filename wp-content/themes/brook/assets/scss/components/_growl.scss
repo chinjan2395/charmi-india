@@ -1,0 +1,15 @@
+.growl.growl {
+	&.growl-default {
+		color: #ffffff;
+		background: rgba(0, 0, 0, .9);
+	}
+
+	.growl-close {
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-right: -10px;
+		margin-top: -6px;
+	}
+}

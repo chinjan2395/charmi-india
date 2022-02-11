@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+	margin-top: 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	font-size: 15px;
+	overflow: auto;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	max-width: 100%;
+	background: $color__background-pre;
+	font-family: $font__pre;
+	line-height: $font__line-height-pre;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-size: 15px;
+	font-family: $font__code;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: none;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+blockquote,
+q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+blockquote {
+	margin: 37px 0 44px 65px !important;
+	padding: 0 0 0 53px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.625;
+	position: relative;
+
+	&:before {
+		@extend %FontAwesomeSolid;
+		content: '\f10e';
+		font-size: 26px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

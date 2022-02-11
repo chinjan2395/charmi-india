@@ -1,0 +1,161 @@
+.tm-twitter {
+	&.style-slider-quote {
+		max-width: 900px;
+		margin: 0 auto;
+
+		.tweet {
+			+ .tweet {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid #eee;
+
+				&:before {
+					top: 13px;
+				}
+			}
+		}
+
+		.tweet-info {
+			position: relative;
+			padding-left: 55px;
+
+			&:before {
+				@extend %FontAwesomeBrands;
+				content: '\f099';
+				font-size: 18px;
+				line-height: 1;
+				position: absolute;
+				top: 0;
+				left: 23px;
+				display: block;
+			}
+		}
+
+		.tweet-heading {
+			font-size: 32px;
+		}
+
+		.tweet-text {
+			position: relative;
+			font-size: 14px;
+			border: 1px solid #ededed;
+			background: #f7fbfe;
+			border-radius: 5px;
+			padding: 17px 20px 25px;
+			margin-bottom: 25px;
+			word-wrap: break-word;
+
+			&:before,
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				transform: rotate(45deg);
+			}
+
+			&:before {
+				left: 30px;
+				bottom: -12px;
+				border-color: transparent #ededed transparent transparent;
+				border-width: 12px;
+			}
+
+			&:after {
+				left: 33px;
+				bottom: -10px;
+				border-color: transparent #f7fbfe transparent transparent;
+				border-width: 10px;
+			}
+		}
+
+		.tweet-heading {
+			font-size: 14px;
+			font-weight: 700;
+		}
+
+		.tweet-date {
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+
+	&.style-slider {
+		max-width: 900px;
+		margin: 0 auto;
+
+		.tweet {
+			position: relative;
+			text-align: center;
+
+			&:before {
+				display: block;
+				@extend %FontAwesomeBrands;
+				content: '\f099';
+				font-size: 120px;
+				line-height: 1;
+				margin-bottom: 10px;
+			}
+
+			.tweet-heading {
+				font-size: 32px;
+			}
+
+			.tweet-text {
+				font-size: 24px;
+				margin-top: 40px;
+			}
+
+			+ .tweet {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid #eee;
+
+				&:before {
+					top: 13px;
+				}
+			}
+		}
+	}
+
+	&.style-list {
+		.item {
+			+ .item {
+				margin-top: 45px;
+			}
+		}
+
+		.tweet {
+			position: relative;
+			padding-left: 31px;
+
+			&:before {
+				@extend %FontAwesomeBrands;
+				content: '\f099';
+				position: absolute;
+				top: 3px;
+				left: 0;
+				font-size: 18px;
+
+				line-height: 1;
+			}
+
+			.tweet-date {
+				display: inline-block;
+				margin-top: 8px;
+			}
+
+			+ .tweet {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-top: 1px solid #eee;
+
+				&:before {
+					top: 13px;
+				}
+			}
+		}
+	}
+}

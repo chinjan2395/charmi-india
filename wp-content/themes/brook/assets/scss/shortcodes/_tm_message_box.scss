@@ -1,0 +1,53 @@
+.tm-message-box {
+	background: #eee;
+	padding: 37px 30px 37px 70px;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	.icon {
+		position: absolute;
+		top: 40px;
+		left: 35px;
+		font-size: 20px;
+		line-height: 1;
+		color: #222;
+	}
+
+	&.style-info {
+		color: #5e7f96;
+		background: #dff2fe;
+
+		.icon {
+			color: inherit;
+		}
+	}
+
+	&.style-warning {
+		color: #9d8967;
+		background: #fff4e2;
+
+		.icon {
+			color: inherit;
+		}
+	}
+
+	&.style-error {
+		background: #f9e2e5;
+		color: #d0021b;
+
+		.icon {
+			color: inherit;
+		}
+	}
+
+	&.style-success {
+		background: #edf9e1;
+		color: #6ca928;
+
+		.icon {
+			color: inherit;
+		}
+	}
+}

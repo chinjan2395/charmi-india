@@ -1,0 +1,181 @@
+.tm-counter {
+	&.align-left {
+		.number-wrap {
+			justify-content: flex-start;
+		}
+	}
+
+	&.align-center {
+		.number-wrap {
+			justify-content: center;
+		}
+	}
+
+	&.align-right {
+		.number-wrap {
+			justify-content: flex-end;
+		}
+	}
+
+	.heading {
+		margin-bottom: 0;
+	}
+
+	&.style-01 {
+
+		.icon {
+			font-size: 80px;
+			line-height: 1;
+			margin-bottom: 11px;
+		}
+
+		.number-wrap {
+			display: flex;
+			margin-bottom: 3px;
+			font-size: 48px;
+			font-weight: 700;
+		}
+
+		.heading {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.5;
+			color: inherit;
+		}
+	}
+
+	&.style-02 {
+		@extend %transit;
+		display: flex;
+		align-items: center;
+		border: 1px solid #ddd;
+		padding: 40px;
+
+		&:hover {
+			border: 30px solid blue;
+		}
+
+		&:before {
+			content: '';
+			padding-top: 100%;
+		}
+
+		.counter-wrap {
+			width: 100%;
+		}
+
+		.icon {
+			font-size: 70px;
+			line-height: 1;
+			margin-bottom: 18px;
+		}
+
+		.number-wrap {
+			display: flex;
+			margin-bottom: 4px;
+			font-size: 48px;
+			font-weight: 600;
+		}
+
+		.heading {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.5;
+			color: inherit;
+		}
+	}
+
+	&.style-03 {
+		.number-wrap {
+			display: flex;
+			font-size: 70px;
+			font-weight: 700;
+			line-height: .9;
+			padding-right: 60px;
+			flex-shrink: 0;
+		}
+
+		.heading {
+			font-size: 18px;
+			line-height: 1.39;
+		}
+
+		.description {
+			margin-top: 20px;
+		}
+	}
+
+	&.style-04 {
+
+		.icon {
+			font-size: 80px;
+			line-height: 1;
+			margin-bottom: 11px;
+
+			i {
+				color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+			}
+		}
+
+		.number-wrap {
+			display: flex;
+			margin-bottom: 3px;
+			font-size: 48px;
+			font-weight: 700;
+		}
+
+		.heading {
+			font-size: 15px;
+			font-weight: 500;
+			font-style: italic;
+			line-height: 1.6;
+			color: inherit;
+		}
+	}
+
+	&.style-05 {
+
+		.icon {
+			font-size: 80px;
+			line-height: 1;
+			margin-bottom: 18px;
+		}
+
+		.number-wrap {
+			display: flex;
+			margin-bottom: 22px;
+			font-size: 80px;
+			font-weight: 600;
+			line-height: .9;
+		}
+
+		.heading {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.5;
+			color: inherit;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-counter {
+		&.style-01 {
+			.number-wrap {
+				font-size: 42px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-counter {
+		&.style-01 {
+			.number-wrap {
+				font-size: 36px;
+			}
+		}
+	}
+}

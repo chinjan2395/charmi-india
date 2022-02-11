@@ -1,0 +1,30 @@
+.vc_ui-panel-content {
+	margin-top: 0 !important;
+}
+
+.vc_edit-form-tab {
+	> .col-break {
+		&:first-child {
+			+ .vc_col-sm-6 {
+				padding-top: 0 !important;
+			}
+		}
+	}
+}
+
+.col-break {
+	&:not(.vc_dependent-hidden) {
+		+ .vc_dependent-hidden:not(.vc_col-sm-12) {
+			display: block !important;
+			visibility: hidden;
+		}
+	}
+}
+
+.vc_column-no-padding {
+	padding-top: 0 !important;
+}
+
+.xdsoft_datetimepicker {
+	z-index: 99999 !important;
+}

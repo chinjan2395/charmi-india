@@ -1,0 +1,40 @@
+.header-12 {
+
+	.header-wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.branding {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header-12 {
+		.desktop-menu & {
+			.page-header-inner {
+				> .container {
+					max-width: 100%;
+					padding-left: 50px;
+					padding-right: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.header-12 {
+		.desktop-menu & {
+			.page-header-inner {
+				> .container {
+					padding-left: 100px;
+					padding-right: 100px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,320 @@
+.tm-countdown {
+	text-align: center;
+
+	.day,
+	.hour,
+	.minute,
+	.second {
+		text-align: center;
+		flex-grow: 1;
+	}
+
+	.countdown {
+		display: inline-block;
+	}
+
+	&.style-01 {
+		.countdown-wrap {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.number {
+			display: inline-block;
+			font-size: 36px;
+			font-weight: 600;
+			color: #222;
+			min-width: 70px;
+			height: 90px;
+			border-radius: 3px;
+			line-height: 90px;
+			text-align: center;
+			background: #eee;
+		}
+
+		.text {
+			display: block;
+			margin-top: 16px;
+		}
+
+		&.skin-light {
+			.number {
+				color: #fff;
+			}
+
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+
+	&.style-02 {
+		.countdown-wrap {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.number {
+			display: inline-block;
+			font-size: 36px;
+			font-weight: 600;
+			min-width: 70px;
+			height: 90px;
+			border-radius: 3px;
+			line-height: 90px;
+			text-align: center;
+			background: red;
+			color: #fff;
+		}
+
+		.text {
+			display: block;
+			margin-top: 16px;
+		}
+
+		&.skin-light {
+			.number {
+				color: #fff;
+			}
+
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+
+	&.style-03 {
+		.countdown-wrap {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.number {
+			display: inline-block;
+			font-size: 70px;
+			font-weight: 400;
+			line-height: 1;
+			color: #222;
+		}
+
+		.text {
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: 2.14px;
+			font-weight: 700;
+			font-size: 12px;
+			margin-top: 13px;
+			color: #999
+		}
+
+		&.skin-light {
+			.number {
+				color: #fff;
+			}
+
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+
+	&.style-04 {
+		.countdown {
+			display: inline-block;
+			width: 770px;
+			max-width: 100%;
+		}
+
+		.time_circles {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		.time_circles > div {
+			position: absolute;
+			text-align: center;
+		}
+
+		.time_circles > div > h4 {
+			font-size: 12px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1.71px;
+			color: #222;
+			line-height: 1;
+			margin: 18px 0 0;
+		}
+
+		.time_circles > div > span {
+			display: block;
+			width: 100%;
+			line-height: .8;
+			font-size: 50px;
+			font-weight: 600;
+			color: #222;
+		}
+	}
+
+	.flip-clock-wrapper {
+		margin: 0;
+		width: auto;
+		display: inline-block;
+	}
+
+	.flip-time-wrap {
+		position: relative;
+		float: left;
+		margin-bottom: 30px;
+	}
+
+	.flip-clock-label {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		float: none;
+		clear: both;
+		display: block;
+		position: static;
+		padding-top: 30px;
+	}
+
+	.flip-clock-dot {
+		height: 5px;
+		width: 6px;
+		left: 7px;
+
+		&.top {
+			top: 40px;
+		}
+
+		&.bottom {
+			bottom: 40px;
+		}
+	}
+
+	&.style-05 {
+		margin: 0 auto;
+
+		.flip-clock-label {
+			color: #222;
+		}
+
+		&.skin-light {
+			.flip-clock-label {
+				color: #fff;
+			}
+
+			.flip-clock-wrapper {
+				ul {
+					li a div {
+						&.up:after {
+							background-color: transparent;
+						}
+
+						div.inn {
+							background-color: #fff;
+							text-shadow: none;
+							color: #081d6a;
+						}
+					}
+				}
+			}
+
+			.flip-clock-dot {
+				background: #fefefe;
+			}
+		}
+	}
+
+	&.style-06 {
+		.countdown {
+			display: block;
+		}
+
+		.countdown-wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.number {
+			display: inline-block;
+			font-size: 48px;
+			font-weight: 400;
+			line-height: 1;
+			color: #222;
+		}
+
+		.text {
+			display: block;
+			font-weight: 400;
+			font-size: 18px;
+			margin-top: 13px;
+			color: #777
+		}
+
+		&.skin-light {
+			.number {
+				color: #fff;
+			}
+
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.tm-countdown {
+		&.style-03 {
+			.number {
+				font-size: 80px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-countdown {
+		&.style-03 {
+			.number {
+				font-size: 60px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-countdown {
+		&.style-01 {
+			.countdown-wrap {
+				grid-template-columns: repeat(2, 1fr);
+
+				.countdown {
+					margin: 0 auto;
+				}
+			}
+		}
+
+		&.style-03 {
+			.number {
+				font-size: 40px;
+			}
+		}
+
+		&.style-04 {
+			.time_circles {
+				> div {
+					> h4 {
+						margin: 10px 0 0;
+					}
+				}
+			}
+		}
+	}
+}

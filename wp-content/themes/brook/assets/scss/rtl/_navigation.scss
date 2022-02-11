@@ -1,0 +1,9 @@
+.rtl {
+	&.desktop-menu {
+		.sm-simple:not(.sm-vertical) .has-mega-menu .mega-menu {
+			right: 0;
+			left: auto !important;
+			width: 100% !important;
+		}
+	}
+}

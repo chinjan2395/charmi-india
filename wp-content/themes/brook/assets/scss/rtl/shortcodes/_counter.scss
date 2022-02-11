@@ -1,0 +1,15 @@
+.rtl {
+	.tm-counter {
+		&.align-left {
+			.number-wrap {
+				justify-content: flex-end;
+			}
+		}
+
+		&.align-right {
+			.number-wrap {
+				justify-content: flex-start;
+			}
+		}
+	}
+}

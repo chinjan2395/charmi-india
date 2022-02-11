@@ -1,0 +1,264 @@
+.tm-product {
+	&.style-grid {
+		.product-wrapper {
+			@extend %transit2;
+			position: relative;
+
+			&:hover {
+				.product-action {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+
+				.thumbnail {
+					img {
+						box-shadow: 0 10px 20px rgba(0, 0, 0, .07);
+					}
+				}
+
+				.product-hover-image {
+					z-index: 9;
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+		}
+
+		.product-thumbnail {
+			position: relative;
+			margin-bottom: 28px;
+		}
+
+		.thumbnail {
+			position: relative;
+
+			img {
+				@extend %transit;
+				width: 100%;
+			}
+		}
+
+		.product-hover-image {
+			transition: all .6s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(10px);
+		}
+
+		.product-actions {
+			position: absolute;
+			left: 0;
+			bottom: 40px;
+			width: 100%;
+			z-index: 99;
+			text-align: center;
+		}
+
+		.product-action {
+			transition: all .3s ease-in-out;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(20px);
+			display: inline-block;
+			padding: 10px;
+			margin: 0 !important;
+
+			+ .product-action {
+				transition-delay: .08s;
+
+				+ .product-action {
+					transition-delay: .16s;
+
+					+ .product-action {
+						transition-delay: .24s;
+					}
+				}
+			}
+
+			> a {
+				&:hover {
+					transform: translateY(-3px);
+				}
+			}
+		}
+
+		.woocommerce_loop_add_to_cart_wrap a,
+		.woosw-btn,
+		.woosc-btn {
+			position: relative;
+			display: block;
+			width: 70px;
+			height: 70px;
+			line-height: 85px;
+			border-radius: 0;
+			color: #222;
+			font-size: 0 !important;
+			padding: 0 !important;
+			background: #fff;
+			box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+			border: 0;
+			text-align: center;
+
+			&:hover {
+				color: #fff !important;
+			}
+
+			&:before {
+				@extend %FontAwesomeSolid;
+				font-size: 18px;
+			}
+		}
+
+		.added_to_cart {
+			display: none !important;
+		}
+
+		.woocommerce_loop_add_to_cart_wrap {
+			.button {
+				&:before {
+					content: '\f290';
+				}
+			}
+		}
+
+		.product_type_simple.add_to_cart_button {
+			&:before {
+				content: '\f290';
+			}
+		}
+
+		.product_type_simple {
+			&:before {
+				content: '\f290';
+			}
+		}
+
+		.product_type_variable {
+			&:before {
+				content: '\f290';
+			}
+		}
+
+		.compare-btn {
+			a {
+				&:before {
+					content: '\f3f1';
+				}
+			}
+		}
+
+		.woosw-btn {
+			&:before {
+				@extend %FontAwesomeRegular;
+				content: '\f004';
+			}
+
+			&.woosw-added {
+				&:before {
+					@extend %FontAwesomeSolid;
+					content: '\f004';
+					margin: 0;
+				}
+			}
+		}
+
+		.add_to_cart_button {
+			&.loading {
+				&:before {
+					animation: load-spin 1s linear infinite !important;
+					content: '\f3f4';
+				}
+			}
+		}
+
+		.woosw-adding,
+		.woosc-btn-adding {
+			&:before {
+				animation: load-spin 1s linear infinite !important;
+				content: '\f3f4' !important;
+			}
+		}
+
+		.product-info {
+			text-align: center;
+		}
+
+		.woocommerce-loop-product__title {
+			font-size: 18px;
+			line-height: 1.4;
+			margin-bottom: 10px;
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.star-rating {
+			margin: 0 auto 13px;
+		}
+
+		div.product {
+			.amount,
+			p.price,
+			span.price {
+				font-size: 18px !important;
+				font-weight: 600 !important;
+			}
+		}
+	}
+}
+
+body:not(.wpb-js-composer) {
+	.tm-product {
+		&.style-grid {
+			.tm-grid {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 50px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	body:not(.wpb-js-composer) {
+		.tm-product {
+			&.style-grid {
+				.tm-grid {
+					grid-template-columns: repeat(3, 1fr);
+					grid-gap: 30px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	body:not(.wpb-js-composer) {
+		.tm-product {
+			&.style-grid {
+				.tm-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	body:not(.wpb-js-composer) {
+		.tm-product {
+			&.style-grid {
+				.tm-grid {
+					grid-template-columns: repeat(1, 1fr);
+				}
+			}
+		}
+	}
+}

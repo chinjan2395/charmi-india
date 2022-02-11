@@ -1,0 +1,128 @@
+.tm-slider-button {
+	&.style-01 {
+		.button-wrap {
+			@extend %clearfix;
+			display: inline-block;
+		}
+
+		.slider-btn {
+			@extend %transit2;
+			border: 1px solid #dddddd;
+			border-radius: 50%;
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			line-height: 48px;
+			float: left;
+			text-align: center;
+			font-size: 16px;
+			color: #111111;
+			outline: none;
+
+			&:hover {
+				background: #111111;
+				color: #ffffff;
+				border-color: #111111;
+			}
+		}
+
+		.slider-prev-btn {
+			margin-right: 5px;
+		}
+
+		&.skin-light {
+			.slider-btn {
+				color: #ffffff;
+				border-color: rgba(221, 221, 221, .18);
+			}
+		}
+	}
+
+	&.style-02 {
+		.button-wrap {
+			@extend %clearfix;
+			display: inline-block;
+		}
+
+		.slider-btn {
+			@extend %transit2;
+			width: 85px;
+			height: 30px;
+			cursor: pointer;
+			position: relative;
+			float: left;
+			opacity: .15;
+			outline: none;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			span {
+				display: none;
+			}
+
+			&:before {
+				content: '';
+				width: 70px;
+				height: 2px;
+				background: #111111;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				margin-top: -9px;
+
+				border-top: 9px solid transparent;
+				border-bottom: 9px solid transparent;
+			}
+		}
+
+		.slider-prev-btn {
+			&:before {
+				left: 1px;
+			}
+
+			&:after {
+				left: 0;
+				border-right: 12px solid #111111;
+			}
+		}
+
+		.slider-next-btn {
+			&:before {
+				right: 1px;
+			}
+
+			&:after {
+				right: 0;
+				border-left: 12px solid #111111;
+			}
+		}
+
+		&.skin-light {
+			.slider-btn {
+				&:before {
+					background: #ffffff;
+				}
+			}
+
+			.slider-prev-btn {
+				&:after {
+					border-right-color: #ffffff;
+				}
+			}
+
+			.slider-next-btn {
+				&:after {
+					border-left-color: #ffffff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,144 @@
+.tm-services-list {
+	&.style-01 {
+		.service-item {
+			display: flex;
+			align-items: center;
+
+			+ .service-item {
+				margin-top: 100px;
+			}
+		}
+
+		.service-image {
+			flex-shrink: 0;
+			max-width: 40%;
+		}
+
+		.service-info {
+			flex-grow: 1;
+			padding: 0 30px;
+			max-width: 890px;
+		}
+
+		.service-name {
+			margin-bottom: 36px;
+		}
+	}
+
+	&.style-02 {
+		.service-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 30px;
+		}
+
+		.service-item {
+			&:hover {
+
+				.blend-image {
+					transform: translate(-10px, 0);
+				}
+
+				.blend-bg {
+					transform: translate(10px, -20px);
+					opacity: 1;
+				}
+			}
+		}
+
+		.service-image {
+			width: 100%;
+			padding: 0 10px;
+			margin-top: 20px;
+
+			.inner {
+				position: relative;
+				display: inline-block;
+			}
+
+			img {
+				visibility: hidden;
+				opacity: 0;
+				width: 100%;
+			}
+
+			.blend-bg,
+			.blend-image {
+				@extend %transit;
+				position: absolute;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			.blend-image {
+				background-size: cover;
+			}
+
+			.blend-bg {
+				opacity: 0;
+				background-color: #d0021b;
+				mix-blend-mode: multiply;
+				transform: translate(10px, -10px);
+			}
+		}
+
+		.service-name {
+			position: relative;
+			font-size: 18px;
+			line-height: 1.39;
+			margin-bottom: 31px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 11px;
+				left: -70px;
+				width: 50px;
+				height: 3px;
+				background: currentColor;
+			}
+		}
+
+		.service-info {
+			padding: 44px 30px 10px 70px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.tm-services-list {
+
+		&.style-01 {
+			.service-info {
+				padding-left: 130px;
+				padding-right: 100px;
+			}
+		}
+
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.tm-services-list {
+		&.style-01 {
+			.service-item {
+				display: block;
+			}
+
+			.service-image {
+				max-width: 100%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.service-info {
+				padding-top: 30px;
+			}
+		}
+	}
+}

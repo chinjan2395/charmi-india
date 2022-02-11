@@ -1,0 +1,31 @@
+.rtl {
+	.tm-swiper {
+		.swiper-button-prev {
+			left: auto;
+
+			i {
+				&:before {
+					content: '\f105';
+				}
+			}
+		}
+
+		.swiper-button-next {
+			right: auto;
+
+			i {
+				&:before {
+					content: '\f104';
+				}
+			}
+		}
+
+		.swiper-button-prev {
+			left: auto;
+		}
+
+		.swiper-button-next {
+			right: auto;
+		}
+	}
+}

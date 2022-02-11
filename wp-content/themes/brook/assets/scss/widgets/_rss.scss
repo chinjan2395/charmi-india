@@ -1,0 +1,29 @@
+.widget_rss {
+	.widget-title {
+		a {
+			color: inherit;
+		}
+	}
+
+	.rss-widget-icon {
+		vertical-align: middle;
+	}
+
+	.rss-date {
+		display: block;
+		margin: 8px 0;
+		position: relative;
+		padding-left: 24px;
+		font-size: 13px;
+
+		&:before {
+			@extend %FontAwesomeSolid;
+			content: '\f133';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			line-height: 0;
+			transform: translate(0, -50%);
+		}
+	}
+}

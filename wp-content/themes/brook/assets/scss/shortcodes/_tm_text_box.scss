@@ -1,0 +1,30 @@
+.tm-text-box {
+
+	.heading {
+		margin-bottom: 21px;
+	}
+
+	&.style-01 {
+		padding: 50px 40px 61px;
+		background: #eee;
+	}
+
+	&.style-02 {
+		padding: 50px 40px 61px;
+		border: 1px solid #ddd;
+	}
+
+	&.style-03,
+	&.style-04 {
+		padding: 50px 40px 61px;
+		color: #fff;
+
+		.heading {
+			color: inherit;
+		}
+	}
+
+	&.style-04 {
+		background: #222;
+	}
+}

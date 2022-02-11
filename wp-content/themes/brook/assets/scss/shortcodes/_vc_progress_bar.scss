@@ -1,0 +1,57 @@
+.vc_progress_bar {
+	.vc_single_bar_wrapper {
+		+ .vc_single_bar_wrapper {
+			margin-top: 42px;
+		}
+	}
+
+	.vc_single_bar_title {
+		@extend %clearfix;
+		margin-bottom: 13px;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		.vc_label_units {
+			float: right;
+		}
+	}
+
+	.vc_general {
+		&.vc_single_bar {
+			height: 5px;
+			border-radius: 0;
+			box-shadow: none;
+			background-color: #f5f5f5;
+
+			.vc_label {
+				padding: 0;
+			}
+
+			.vc_bar {
+				border-radius: inherit;
+			}
+		}
+	}
+
+	&.style-2 {
+		.vc_single_bar_title {
+			width: 100% !important;
+		}
+	}
+
+	&.style-3 {
+		.vc_single_bar_title {
+			font-size: 15px;
+			font-weight: 400;
+			text-transform: none;
+			margin-bottom: 14px;
+		}
+
+		.vc_single_bar_wrapper {
+			+ .vc_single_bar_wrapper {
+				margin-top: 34px;
+			}
+		}
+	}
+}

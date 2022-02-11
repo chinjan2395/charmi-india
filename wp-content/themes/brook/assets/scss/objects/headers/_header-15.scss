@@ -1,0 +1,35 @@
+.header-15 {
+
+	.branding {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-wrap {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	.branding {
+		flex-shrink: 0;
+	}
+
+	.header-right {
+		flex-grow: 1;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header-15 {
+		.desktop-menu & {
+			.page-header-inner {
+				> .container {
+					max-width: 100%;
+					padding-left: 100px;
+					padding-right: 100px;
+				}
+			}
+		}
+	}
+}

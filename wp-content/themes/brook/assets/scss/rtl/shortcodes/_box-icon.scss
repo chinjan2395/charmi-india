@@ -1,0 +1,25 @@
+.rtl {
+	.tm-box-icon {
+		.tm-box-icon__btn {
+			.button-icon {
+				&.fa-arrow-right {
+					&:before {
+						content: "\f060";
+					}
+				}
+			}
+		}
+
+		&.align-left {
+			.content-wrap {
+				align-items: flex-end !important;
+			}
+		}
+
+		&.align-right {
+			.content-wrap {
+				align-items: flex-start !important;
+			}
+		}
+	}
+}

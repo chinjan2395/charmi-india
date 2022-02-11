@@ -1,0 +1,263 @@
+.tm-grid-wrapper {
+	.tm-filter-button-group {
+		padding-bottom: 60px;
+
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&.right {
+			text-align: right;
+		}
+
+		&.center {
+			text-align: center;
+		}
+
+		&.show-filter-counter {
+			padding-top: 25px;
+		}
+	}
+
+	.tm-filter-button-group-inner {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	&.filter-counter-style-01 {
+		.btn-filter {
+			position: relative;
+			display: inline-block;
+			padding: 5px 15px;
+
+			&:hover {
+				.filter-counter {
+					visibility: visible;
+					opacity: 1;
+					transform: translate(-50%, -100%);
+				}
+			}
+		}
+
+		.filter-text {
+			text-transform: capitalize;
+		}
+
+		.filter-counter {
+			@extend %transit2;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			visibility: hidden;
+			margin: 0 auto;
+			min-width: 34px;
+			height: 24px;
+			line-height: 24px;
+			border-radius: 3px;
+			font-size: 12px;
+			background-color: #4d4c4d;
+			color: #fff;
+			text-align: center;
+			opacity: 0;
+			transform: translate(-50%, -50%);
+
+			&:before {
+				position: absolute;
+				right: 0;
+				bottom: -4px;
+				left: 0;
+				display: block;
+				margin: 0 auto;
+				width: 0;
+				height: 0;
+				border-top: 4px solid #4d4c4d;
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+				content: "";
+			}
+		}
+	}
+
+	&.filter-counter-style-02 {
+		.tm-filter-button-group-inner {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		.tm-filter-button-group {
+			padding-bottom: 77px;
+
+			&.show-filter-counter {
+				padding-top: 4px;
+			}
+		}
+
+		.btn-filter {
+			position: relative;
+			display: inline-block;
+			padding: 5px 30px 5px 10px;
+			color: #888;
+		}
+
+		.filter-text {
+			letter-spacing: 0.2px;
+		}
+
+		.filter-counter {
+			@extend %transit2;
+			position: absolute;
+			top: -7px;
+			right: 10px;
+			font-size: 12px;
+			color: #bbb;
+			text-align: right;
+		}
+	}
+}
+
+.modern-grid {
+	display: grid;
+}
+
+.grid-width-2 {
+	grid-column: span 2;
+}
+
+.grid-height-2 {
+	grid-row: span 2;
+}
+
+.tm-grid-loader {
+	display: none;
+	margin: 0;
+
+	.sk-wrap {
+		margin: 0 auto;
+	}
+}
+
+.tm-grid-pagination {
+	padding-top: 80px;
+}
+
+.tm-grid-loadmore-btn {
+	font-size: 14px;
+	font-weight: 500;
+
+	.button-icon {
+		margin-left: 15px;
+	}
+}
+
+.tm-grid-messages {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.page-has-animation:not(.compose-mode) {
+	.tm-grid {
+		&.has-animation {
+			.grid-item {
+				opacity: 0;
+			}
+		}
+
+		&.fade-in {
+			.animate {
+				animation: fadeIn .95s ease forwards;
+			}
+		}
+
+		&.move-up {
+			.animate {
+				transform: translateY(100px);
+				animation: moveVertical .65s ease forwards;
+			}
+		}
+
+		&.move-down {
+			.animate {
+				transform: translateY(-100px);
+				animation: moveVertical .65s ease forwards;
+			}
+		}
+
+		&.move-left {
+			.animate {
+				transform: translateX(100px);
+				animation: moveHorizontal .65s ease forwards;
+			}
+		}
+
+		&.move-right {
+			.animate {
+				transform: translateX(-100px);
+				animation: moveHorizontal .65s ease forwards;
+			}
+		}
+
+		&.scale-up {
+			.animate {
+				transform: scale(.6);
+				animation: scaleUp .65s ease-in-out forwards;
+			}
+		}
+
+		&.fly {
+			perspective: 1300px;
+
+			.animate {
+				transform: rotateX(-180deg);
+				transform-origin: 50% 50% -300px;
+				animation: fly .8s ease-in-out forwards;
+				transform-style: preserve-3d;
+			}
+		}
+
+		&.flip {
+			.animate {
+				transform: rotateX(-80deg);
+				transform-origin: 0% 0%;
+				animation: flip .8s ease-in-out forwards;
+				transform-style: preserve-3d;
+			}
+		}
+
+		&.helix {
+			perspective: 1300px;
+
+			.animate {
+				transform: rotateY(-180deg);
+				animation: helix .8s ease-in-out forwards;
+				transform-style: preserve-3d;
+			}
+		}
+
+		&.pop-up {
+			perspective: 1300px;
+
+			.animate {
+				transform: scale(.4);
+				animation: popUp .8s ease-in forwards;
+				transform-style: preserve-3d;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-grid-wrapper {
+		.tm-filter-button-group-inner {
+			display: block;
+		}
+	}
+
+	.grid-width-2 {
+		grid-column: span 1;
+	}
+
+	.grid-height-2 {
+		grid-row: span 1;
+	}
+}

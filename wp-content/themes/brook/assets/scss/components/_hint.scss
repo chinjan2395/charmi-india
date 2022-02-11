@@ -1,0 +1,20 @@
+.hint--white {
+	&[aria-label] {
+		&:before {
+			border-top-color: #ffffff;
+		}
+
+		&:after {
+			background: #ffffff;
+			color: #111111;
+			text-shadow: none;
+		}
+	}
+
+	&.hint--bottom {
+		&:before {
+			border-top-color: transparent;
+			border-bottom-color: #ffffff;
+		}
+	}
+}

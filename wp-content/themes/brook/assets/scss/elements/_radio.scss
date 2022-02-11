@@ -1,0 +1,57 @@
+input[type='radio'] {
+	position: relative;
+	padding: 5px;
+	margin: 0 10px 0 3px;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -9px;
+		margin-left: -9px;
+		background: #ffffff;
+		border: 1px solid #e7e7e7;
+		border-radius: 50%;
+		z-index: 1;
+		transition: background .3s ease, border-color .3s ease;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: #ffffff;
+		border-radius: 50%;
+		z-index: 2;
+		transform: translate(-50%, -50%) scale(0);
+		transition: transform .3s ease;
+	}
+
+	&:hover {
+		&:before {
+			border-color: #222222;
+		}
+	}
+
+	&:checked {
+		cursor: auto;
+
+		&:before {
+			background: #222222;
+			border-color: #222222;
+		}
+
+		&:after {
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+}

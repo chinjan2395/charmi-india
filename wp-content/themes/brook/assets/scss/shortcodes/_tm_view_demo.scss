@@ -1,0 +1,35 @@
+.tm-view-demo {
+	text-align: center;
+
+	.item-wrap {
+		&:hover {
+			.thumbnail {
+				transform: translateY(-20px);
+			}
+		}
+	}
+
+	.thumbnail {
+		@extend %transit;
+		position: relative;
+		margin-bottom: 40px;
+		box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+
+		> img {
+			border-radius: inherit;
+			width: 100%;
+		}
+	}
+
+	.heading {
+		font-size: 18px;
+		line-height: 1.39;
+		margin-bottom: 0;
+	}
+
+	.badge {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+	}
+}

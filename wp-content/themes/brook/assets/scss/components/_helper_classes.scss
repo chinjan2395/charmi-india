@@ -1,0 +1,67 @@
+.embed-responsive,
+.video-player {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+.embed-responsive-16by9,
+.video-player {
+	padding-bottom: 56.25%;
+}
+
+.instagram-media {
+	max-width: 100% !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.full-height {
+	min-height: 100vh;
+
+	.admin-bar & {
+		min-height: calc(100vh - 32px);
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.col-sm-order-first {
+		order: 1;
+	}
+
+	.col-sm-order-second {
+		order: 2;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.col-xs-order-first {
+		order: 1;
+	}
+
+	.col-xs-order-second {
+		order: 2;
+	}
+}

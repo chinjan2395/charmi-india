@@ -1,0 +1,115 @@
+.vc_row-has-separator {
+	position: relative;
+	overflow: visible !important;
+
+	.vc_column_container {
+		z-index: 2;
+	}
+}
+
+.vc_row-separator {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	line-height: 0;
+
+	&.top {
+		top: 0;
+	}
+
+	&.bottom {
+		bottom: 0;
+	}
+
+	svg {
+		fill: transparent;
+		width: 100%;
+		height: 100px;
+	}
+
+	&.tilt_left {
+		&.top {
+			transform: scale(1, -1);
+		}
+	}
+
+	&.tilt_right {
+		&.top {
+			transform: scale(-1, -1);
+		}
+
+		&.bottom {
+			transform: scale(-1, 1);
+		}
+	}
+
+	&.triangle {
+		&.bottom {
+			transform: scaleY(-1);
+		}
+	}
+
+	&.big_triangle {
+		&.bottom {
+			transform: scaleY(-1);
+		}
+	}
+
+	&.big_triangle_alt {
+		&.top {
+			transform: scaleY(-1);
+		}
+	}
+
+	&.big_triangle_left {
+		&.top {
+			transform: scaleY(-1);
+		}
+	}
+
+	&.big_triangle_right {
+		&.top {
+			transform: scale(-1);
+		}
+
+		&.bottom {
+			transform: scaleX(-1);
+		}
+	}
+
+	&.curve {
+		&.top {
+			transform: scale(-1);
+		}
+	}
+
+	&.clouds {
+		&.top {
+			transform: scale(-1);
+		}
+	}
+
+	&.circle {
+		&.bottom {
+			transform: scaleY(-1);
+		}
+	}
+
+	&.square {
+		width: auto;
+		left: 50%;
+
+		svg {
+			width: auto;
+		}
+
+		&.top {
+			transform: translate(-50%, -50%);
+		}
+
+		&.bottom {
+			transform: translate(-50%, 50%);
+		}
+	}
+}

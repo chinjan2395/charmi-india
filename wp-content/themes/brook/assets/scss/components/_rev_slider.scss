@@ -1,0 +1,40 @@
+.rev_slider {
+	iframe {
+		border: 0 !important;
+	}
+}
+
+.long-minus {
+	display: inline-block;
+	vertical-align: middle;
+	content: ' ';
+	width: 70px;
+	height: 6px;
+	background: currentColor;
+	margin: 0 27px;
+}
+
+.long-minus-2 {
+	display: inline-block;
+	vertical-align: middle;
+	content: ' ';
+	width: 55px;
+	height: 11px;
+	background: currentColor;
+	margin: 0 27px;
+}
+
+.custom-gradient-text-01 {
+	background: linear-gradient(to right, #2532FF 5%, #C91D6E 80%);
+	color: transparent !important;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+@include media-breakpoint-down(sm) {
+	.long-minus {
+		width: 50px;
+		height: 3px;
+		margin: 0 27px;
+	}
+}

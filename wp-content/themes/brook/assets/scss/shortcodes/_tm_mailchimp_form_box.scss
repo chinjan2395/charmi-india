@@ -1,0 +1,116 @@
+.tm-mailchimp-form-box {
+	.form-item-wrap {
+		position: relative;
+	}
+
+	.button-icon {
+		@extend %FontAwesomeSolid;
+
+		&:before {
+			content: '\f0e0';
+		}
+	}
+
+	&.style-01 {
+		padding: 53px 30px 61px;
+
+		.form-title {
+			font-size: 18px;
+			color: #fff;
+			margin-bottom: 35px;
+		}
+
+		input[type='email'] {
+			background: #fff;
+			border-color: #fff !important;
+		}
+
+		.button-text {
+			display: none;
+		}
+
+		.form-submit {
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: 0;
+			border-radius: 0;
+			background: transparent;
+			font-size: 14px;
+			padding: 0;
+			width: 62px;
+			height: 62px;
+			line-height: 62px;
+			box-shadow: none;
+			transform: none;
+		}
+	}
+
+	&.style-02,
+	&.style-03 {
+		padding: 83px 70px 85px;
+		background: #fff;
+		text-align: center;
+
+		.form-title {
+			font-size: 24px;
+			line-height: 1.59;
+			margin-bottom: 37px;
+		}
+
+		input {
+			text-align: center;
+		}
+
+		.form-submit {
+			display: block;
+			margin: 38px auto 0;
+		}
+
+		.button-icon {
+			display: none;
+		}
+
+		.form-description {
+			display: block;
+			margin-top: 20px;
+			font-size: 12px;
+			line-height: 1.84;
+			font-style: italic;
+		}
+
+		.form-item {
+			+ .form-item {
+				margin-top: 30px;
+			}
+		}
+
+		.form-item-name {
+			display: block;
+		}
+	}
+
+	&.style-02 {
+		.form-submit {
+			width: 100%;
+		}
+	}
+
+	&.style-03 {
+		.form-submit {
+			border-radius: 40px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.tm-mailchimp-form-box {
+		&.style-02 {
+			padding: 60px 40px 55px
+		}
+
+		&.style-03 {
+			padding: 53px 40px 55px
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.tm-problem-solution {
+	.ps-label {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 700;
+		font-size: 13px;
+		margin-bottom: 13px;
+	}
+
+	.name {
+		font-size: 24px;
+		line-height: 1.33;
+		margin-bottom: 23px;
+	}
+
+	.problem {
+		text-align: right;
+	}
+
+	.image {
+		text-align: center;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-problem-solution {
+		.problem {
+			margin-bottom: 30px;
+			text-align: left;
+		}
+
+		.solution {
+			margin-top: 30px;
+		}
+	}
+}

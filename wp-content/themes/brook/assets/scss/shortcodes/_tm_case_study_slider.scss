@@ -1,0 +1,35 @@
+.tm-case-study-slider {
+	&.style-01 {
+		.post-count {
+			font-size: 100px;
+			font-weight: 700;
+			line-height: 1;
+			color: rgba(17, 17, 17, 0.06);
+			margin-bottom: 14px;
+		}
+
+		.sub-title {
+			font-size: 15px;
+			font-weight: 700;
+			margin-bottom: 14px;
+		}
+
+		.title {
+			font-size: 30px;
+			font-weight: 300;
+			line-height: 1.5;
+			margin-bottom: 19px;
+			padding-bottom: 23px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.text {
+			font-size: 18px;
+			line-height: 1.67;
+		}
+
+		.slider-content {
+			padding: 0 20px;
+		}
+	}
+}

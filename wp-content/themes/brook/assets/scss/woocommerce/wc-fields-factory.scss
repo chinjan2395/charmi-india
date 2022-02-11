@@ -1,0 +1,23 @@
+.single-product {
+	.wccpf-fields-container {
+		margin-bottom: 30px;
+	}
+
+	form.cart {
+		table.wccpf_fields_table {
+			td {
+				border: 0;
+			}
+
+			td.wccpf_label {
+				width: 115px;
+				padding: 0;
+			}
+
+			td.wccpf_label label {
+				min-width: 0;
+				width: auto;
+			}
+		}
+	}
+}

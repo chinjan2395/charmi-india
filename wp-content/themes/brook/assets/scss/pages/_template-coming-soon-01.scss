@@ -1,0 +1,119 @@
+.page-template-coming-soon-01 {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	color: #fff;
+
+	.site {
+		.container-fluid {
+			> .row > .col-md-6 {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.maintenance-page {
+		padding: 50px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.cs-content-wrapper {
+		max-width: 660px;
+		padding: 0 95px;
+	}
+
+	.cs-logo {
+		margin-bottom: 95px;
+	}
+
+	.cs-title {
+		position: relative;
+		font-size: 36px;
+		line-height: 1.44;
+		color: #fff;
+		margin-bottom: 78px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 26px;
+			left: -200px;
+			background: #fff;
+			height: 1px;
+			width: 170px;
+		}
+	}
+
+	.cs-form {
+		margin-top: 77px;
+	}
+
+	.cs-mailchimp-title {
+		margin-top: 22px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.page-template-coming-soon-01 {
+		.cs-content-wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 510px;
+			max-width: 100%;
+		}
+
+		.maintenance-social-networks {
+			margin-top: 30px;
+			position: static;
+			top: auto;
+			left: auto;
+			right: auto;
+			bottom: auto;
+			transform: none;
+			height: auto;
+		}
+
+		.cs-logo {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.page-template-coming-soon-01 {
+		.cs-content-wrapper {
+			padding-left: 0;
+			padding-right: 0;
+			width: 510px;
+			max-width: 100%;
+		}
+
+		.cs-title {
+			font-size: 30px;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.coming-soon-bg {
+			height: 500px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-template-coming-soon-01 {
+		#maintenance-wrap .mc4wp-form {
+			.mc4wp-form-fields {
+				display: block;
+			}
+
+			.form-submit {
+				margin: 0 auto;
+			}
+		}
+	}
+}

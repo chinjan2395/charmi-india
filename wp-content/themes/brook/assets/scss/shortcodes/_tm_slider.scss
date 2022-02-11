@@ -1,0 +1,71 @@
+.tm-slider {
+
+	a:hover {
+		.image {
+			img {
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+
+	&.style-01 {
+		text-align: center;
+
+		&.align-left {
+			text-align: left;
+
+			.slider-content {
+				padding: 0 30px 0 0;
+			}
+		}
+
+		&.align-right {
+			text-align: right;
+
+			.slider-content {
+				padding: 0 0 0 30px;
+			}
+		}
+
+		&.align-justify {
+			text-align: justify;
+		}
+
+		.spacing {
+			height: 28px;
+		}
+
+		.sub-title {
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 3px;
+			line-height: 1.71;
+			text-transform: uppercase;
+			margin-bottom: 14px;
+		}
+
+		.heading {
+			font-size: 18px;
+			margin-bottom: 14px;
+		}
+
+		&.fw-image {
+			.swiper-slide-inner {
+				width: 100%;
+			}
+
+			.image {
+				overflow: hidden;
+
+				img {
+					@extend %transit;
+					width: 100%;
+				}
+			}
+		}
+
+		.slider-content {
+			padding: 0 20px;
+		}
+	}
+}

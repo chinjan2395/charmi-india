@@ -1,0 +1,75 @@
+.rtl {
+	.insight_core_breadcrumb li + li:before {
+		content: '\f104';
+	}
+
+	.woocommerce-pagination li i,
+	.comment-nav-links li i,
+	.page-pagination li i {
+		&.fa-chevron-left:before {
+			content: '\f054';
+		}
+
+		&.fa-chevron-right:before {
+			content: '\f053';
+		}
+
+		&.fa-angle-left:before {
+			content: '\f105';
+		}
+
+		&.fa-angle-right:before {
+			content: '\f104';
+		}
+	}
+
+	.nav-links {
+		.previous {
+			span {
+				&:before {
+					content: "\f061";
+				}
+			}
+		}
+
+		.next {
+			span {
+				&:before {
+					content: "\f060";
+				}
+			}
+		}
+	}
+
+	.portfolio-nav-links {
+		.prev {
+			h6 {
+				&:before {
+					content: '\f061';
+				}
+			}
+		}
+
+		.next {
+			h6 {
+				&:before {
+					content: '\f060';
+				}
+			}
+		}
+	}
+
+	.woo-nav-links {
+		.prev {
+			a:before {
+				content: '\f061';
+			}
+		}
+
+		.next {
+			a:before {
+				content: '\f060';
+			}
+		}
+	}
+}

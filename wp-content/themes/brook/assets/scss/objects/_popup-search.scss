@@ -1,0 +1,150 @@
+.search-popup-close {
+	position: relative;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	flex-shrink: 0;
+
+	&:before,
+	&:after {
+		@extend %transit;
+		position: absolute;
+		top: 19px;
+		left: 8px;
+		content: '';
+		width: 24px;
+		height: 3px;
+		background: #222;
+		transform-origin: 50% 50%;
+	}
+
+	&:before {
+		transform: rotate(-45deg);
+	}
+
+	&:after {
+		transform: rotate(45deg);
+	}
+
+	&:hover {
+		&:before,
+		&:after {
+			transform: none;
+		}
+	}
+}
+
+.page-search-popup-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	padding: 0 15px 0 30px;
+	height: 85px;
+	align-items: center;
+}
+
+.page-search-popup-logo {
+	flex-grow: 1;
+}
+
+.page-search-popup-opened {
+	overflow: hidden;
+}
+
+.page-search-popup {
+	@extend %transit;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999;
+	background: rgba(0, 0, 0, .9);
+	visibility: hidden;
+	opacity: 0;
+	cursor: url('assets/images/cursor/light-close.png') 16 16, pointer;
+
+	.admin-bar & {
+		top: 32px;
+		height: calc(100% - 32px);
+	}
+
+	> .inner {
+		position: relative;
+		width: 400px;
+		max-width: 80%;
+		height: 100%;
+		background: #fff;
+		text-align: left;
+		transition: all .3s;
+		overflow-y: auto;
+		padding-top: 85px;
+		transform: translateX(-100%);
+		cursor: default;
+	}
+
+	.page-search-popup-opened & {
+		visibility: visible;
+		opacity: 1;
+
+		> .inner {
+			transform: none;
+		}
+	}
+
+	.page-search-popup-content {
+		padding: 30px 40px;
+	}
+
+	.search-form {
+		position: relative;
+	}
+
+	.search-field {
+		background-color: transparent !important;
+		border: 0;
+		border-bottom: 1px solid rgba(255, 255, 255, .15) !important;
+		padding: 15px 50px 15px 0;
+		color: inherit;
+	}
+
+	.search-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: transparent !important;
+		border: 0 !important;
+		font-size: 0;
+		padding: 0;
+		height: 62px;
+		line-height: 62px;
+		color: inherit;
+		transform: none !important;
+		box-shadow: none !important;
+
+		.search-btn-icon {
+			font-size: 15px;
+			vertical-align: middle;
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.page-search-popup {
+		.admin-bar & {
+			top: 46px;
+			height: calc(100% - 46px);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.page-search-popup {
+		.admin-bar & {
+			top: 0;
+			height: 100%;
+		}
+	}
+}

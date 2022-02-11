@@ -1,0 +1,75 @@
+@mixin transit {
+	transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+@mixin transit2 {
+	transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+%transit {
+	@include transit();
+}
+
+%transit2 {
+	@include transit2();
+}
+
+// Mixin for font awesome version 5.x
+
+@mixin fontawesome {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+
+%FontAwesomeSolid {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 900;
+}
+
+%FontAwesomeLight {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 300;
+}
+
+%FontAwesomeRegular {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 400;
+}
+
+%FontAwesomeBrands {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Brands';
+	font-weight: 400;
+}
+
+%FontAwesomeSolidImportant {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro' !important;
+	font-weight: 900;
+}
+
+%FontAwesomeLightImportant {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro' !important;
+	font-weight: 300;
+}
+
+%FontAwesomeRegularImportant {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Pro' !important;
+	font-weight: 400;
+}
+
+%FontAwesomeBrandsImportant {
+	@include fontawesome();
+	font-family: 'Font Awesome 5 Brands' !important;
+	font-weight: 400;
+}

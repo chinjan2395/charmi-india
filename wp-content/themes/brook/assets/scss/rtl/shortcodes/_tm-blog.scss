@@ -1,0 +1,13 @@
+.rtl {
+	.tm-blog {
+		&.style-list-overlay {
+			.post-read-more {
+				.post-read-more-icon {
+					&:before {
+						content: '\f060';
+					}
+				}
+			}
+		}
+	}
+}

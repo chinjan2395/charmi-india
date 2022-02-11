@@ -1,0 +1,15 @@
+.widget {
+	.tagcloud {
+		@extend %clearfix;
+		margin: -10px;
+
+		a {
+			display: block;
+			float: left;
+			font-size: 14px !important;
+			font-weight: 500;
+			padding: 10px;
+			color: inherit;
+		}
+	}
+}

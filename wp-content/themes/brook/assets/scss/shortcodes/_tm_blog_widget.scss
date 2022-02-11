@@ -1,0 +1,29 @@
+.tm-blog-widget {
+	&.style-list {
+		.tm-grid {
+			display: grid;
+			grid-row-gap: 20px;
+		}
+
+		.post-wrapper {
+			display: flex;
+		}
+
+		.post-thumbnail {
+			flex-shrink: 0;
+			width: 80px;
+			margin-right: 10px;
+		}
+
+		.post-info {
+			flex-grow: 1;
+		}
+
+		.post-title {
+			font-size: 14px;
+			line-height: 1.58;
+			margin-bottom: 0;
+			font-weight: inherit;
+		}
+	}
+}

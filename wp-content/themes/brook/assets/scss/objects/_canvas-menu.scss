@@ -1,0 +1,174 @@
+.page-off-canvas-main-menu {
+	@extend %transit2;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	visibility: hidden;
+	overflow: hidden;
+	overflow-y: auto;
+	opacity: 0;
+	transform: scale(.3);
+	padding: 100px 120px;
+	display: flex;
+	flex-flow: column;
+
+	.admin-bar & {
+		top: 32px;
+	}
+
+	.page-navigation {
+		position: relative;
+		flex-grow: 1;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+	}
+
+	.menu__container {
+		> li {
+			display: inline-block;
+		}
+
+		.toggle-sub-menu {
+			vertical-align: middle;
+			margin-left: 35px;
+
+			&:before {
+				position: relative;
+				font-size: .5em;
+			}
+		}
+	}
+}
+
+.off-canvas-content-bottom {
+	justify-content: flex-end;
+	margin-top: 100px;
+
+	a {
+		display: inline-block;
+	}
+}
+
+.off-canvas-search-form {
+	max-width: 420px;
+	margin-bottom: 148px;
+
+	.search-form {
+		position: relative;
+	}
+
+	.search-field {
+		background-color: transparent !important;
+		border: 0;
+		border-bottom: 2px solid #eee;
+		padding: 28px 50px 28px 0;
+	}
+
+	.search-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: transparent !important;
+		border: 0 !important;
+		font-size: 0;
+		padding: 0;
+		transform: none !important;
+		box-shadow: none !important;
+		height: 62px;
+
+		.search-btn-icon {
+			font-size: 15px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.off-canvas-social-networks {
+	margin-top: 25px;
+
+	.inner {
+		margin: -5px -8px;
+	}
+
+	a {
+		display: inline-block;
+		font-size: 20px;
+		padding: 5px 8px;
+	}
+}
+
+.off-canvas-copyright {
+	text-align: right;
+}
+
+.page-off-canvas-menu-opened {
+	overflow: hidden;
+
+	.page-header {
+		z-index: 99999;
+	}
+
+	.page-off-canvas-main-menu {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	.page-close-main-menu {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.page-close-main-menu {
+	@extend %transit2;
+	position: fixed;
+	top: 80px;
+	right: 90px;
+	z-index: 100000;
+	visibility: hidden;
+	font-size: 100px;
+	line-height: 0;
+	opacity: 0;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+
+	&:before,
+	&:after {
+		@extend %transit;
+		position: absolute;
+		top: 19px;
+		left: 4px;
+		content: '';
+		width: 32px;
+		height: 3px;
+		background: #222;
+		transform-origin: 50% 50%;
+	}
+
+	&:before {
+		transform: rotate(-45deg);
+	}
+
+	&:after {
+		transform: rotate(45deg);
+	}
+
+	&:hover {
+		&:before,
+		&:after {
+			transform: none;
+		}
+	}
+}

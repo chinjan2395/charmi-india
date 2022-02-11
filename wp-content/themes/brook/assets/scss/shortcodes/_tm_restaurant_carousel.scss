@@ -1,0 +1,74 @@
+.tm-restaurant-carousel {
+
+	a:hover {
+		.image {
+			img {
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+
+	&.style-01 {
+		text-align: center;
+
+		&.align-left {
+			text-align: left;
+
+			.slider-content {
+				padding: 0 30px 0 0;
+			}
+		}
+
+		&.align-right {
+			text-align: right;
+
+			.slider-content {
+				padding: 0 0 0 30px;
+			}
+		}
+
+		&.align-justify {
+			text-align: justify;
+		}
+
+		.item-spacing {
+			height: 28px;
+		}
+
+		.item-title {
+			font-family: "Futura", sans-serif;
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 9px;
+		}
+
+		.item-description {
+			font-size: 14px;
+			font-style: italic;
+			margin-bottom: 19px;
+		}
+
+		.item-price {
+			font-size: 15px;
+		}
+
+		&.fw-image {
+			.swiper-slide-inner {
+				width: 100%;
+			}
+
+			.image {
+				overflow: hidden;
+
+				img {
+					@extend %transit;
+					width: 100%;
+				}
+			}
+		}
+
+		.slider-content {
+			padding: 0 20px;
+		}
+	}
+}
