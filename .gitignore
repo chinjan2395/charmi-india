@@ -30,3 +30,4 @@ speed-measure-plugin*.json
 # System Files
 .DS_Store
 Thumbs.db
+/wp-content/uploads/
