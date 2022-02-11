@@ -8338,3 +8338,17 @@ function isset_column( $meta_data, $column_name ) {
 
 	return $meta;
 }
+
+add_filter( 'woocommerce_product_settings', 'add_custom_weight_unit', 20, 1 );
+function add_custom_weight_unit( $settings ){
+
+	foreach( $settings as $key => $field ) {
+		if( $field['id'] == 'woocommerce_weight_unit' ) {
+			$field['options']['ct'] = __( 'ct', 'woocommerce' );
+			$settings[ $key ] = $field;
+			break;
+		}
+	}
+
+	return $settings;
+}
